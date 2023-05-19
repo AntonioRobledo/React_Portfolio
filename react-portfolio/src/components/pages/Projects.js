@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Resume() {
+export default function Projects() {
     return (
       <div className='flex justify-center'>
-        <h1>Resume</h1>
+        <h1>Projects</h1>
       </div>
     );
   }
