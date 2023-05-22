@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div className='bg-slate-300 p-2'>
             <div className='font-bold flex justify text-3xl m-4 ml-10'>About Me</div>
-            <img class='flex  w-40 h-40 rounded-full' src={pfp}/>
+            <img class='flex w-40 h-40 rounded-full' src={pfp}/>
 
         <div className='inline-block text-justify mt-2 m-3 p-6 text-xl leading-loose'>
            <p> Hello, I'm Antonio. A full-stack web developer. </p>
