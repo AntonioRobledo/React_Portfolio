@@ -14,7 +14,7 @@ A portfolio made possible using React and contains a variety of pages that inclu
 
 ## Deployed Application
 ---
-![screenshot](../images/React%20Portfolio.png/)
+![screenshot](./images/React%20Portfolio.png)
 
 ## Technologies Used
 ---
