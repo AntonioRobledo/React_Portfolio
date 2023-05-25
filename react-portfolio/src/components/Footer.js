@@ -5,8 +5,8 @@ import Instagram from '../images/Instagram.png';
 
 function Footer() {
     return (
-        <footer className='bg-slate-300 p-20'>
-            <div className='flex justify-center gap-6'>
+        <footer className='bg-slate-300 p-12'>
+            <div className='flex justify-center gap-6 mt-28'>
                 <a href='https://github.com/AntonioRobledo' target='_blank'>
                     <img src={GitHub} alt='GitHub' className='rounded-full w-14 hover:opacity-60'></img>
                 </a>
