@@ -19,7 +19,7 @@ export default function Projects() {
           </p>
         </div>
         <div className='flex justify-center gap-6'>
-          <a href='https://github.com/AntonioRobledo/Employee_Tracker' target='_blank'>
+          <a href='https://github.com/AntonioRobledo/Employee_Tracker' target='_blank'  rel="noreferrer">
             <span className='inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 hover:bg-gray-300 mr-2 '>GitHub</span>
           </a>
       </div>
@@ -34,10 +34,10 @@ export default function Projects() {
           </p>
         </div>
         <div className="flex justify-center gap-6">
-          <a href='https://github.com/AntonioRobledo/Text_Editor' target='_blank'>
+          <a href='https://github.com/AntonioRobledo/Text_Editor' target='_blank'  rel="noreferrer">
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 hover:bg-gray-300 mr-2 mb-4">GitHub</span>
           </a>
-          <a href='https://blooming-dawn-00607.herokuapp.com/' target='_blank'>
+          <a href='https://blooming-dawn-00607.herokuapp.com/' target='_blank'  rel="noreferrer">
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 hover:bg-gray-300 mr-2 mb-4">Link to App</span>
           </a>
         </div>
@@ -52,10 +52,10 @@ export default function Projects() {
           </p>
         </div>
         <div className="flex justify-center gap-6">
-          <a href='https://github.com/AntonioRobledo/Weather-Dashboard' target='_blank'>
+          <a href='https://github.com/AntonioRobledo/Weather-Dashboard' target='_blank'  rel="noreferrer">
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 hover:bg-gray-300 mr-2 mb-4">GitHub</span>
           </a>
-          <a href='https://antoniorobledo.github.io/Weather-Dashboard/' target='_blank'>
+          <a href='https://antoniorobledo.github.io/Weather-Dashboard/' target='_blank'  rel="noreferrer">
           <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 hover:bg-gray-300 mr-2 mb-4">Link to App</span>
           </a>
         </div>
