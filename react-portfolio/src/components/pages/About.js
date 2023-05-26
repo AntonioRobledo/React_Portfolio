@@ -6,7 +6,7 @@ const About = () => {
         <div className='bg-slate-300 p-2'>
             <div className='font-bold flex justify-center text-4xl m-4 p-2'>About Me</div>
             <div className='flex justify-center'>
-                <img className='w-60 h-60 rounded-full' src={pfp} alt='profile picture'/>
+                <img className='w-60 h-60 rounded-full' src={pfp} alt='profile'/>
             </div>
 
     <div className='flex justify-center'>

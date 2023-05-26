@@ -8,8 +8,6 @@ export default function Projects() {
     <div className='bg-slate-300 p-4'> 
       <h1 className='font-bold text-3xl flex justify-center'>Projects</h1>
 
-     {/*  <div className="max-w-lg shadow-xl flex justify-end">  */}
-
 <div className='grid grid-cols-3 gap-4 mt-4 p-2'>
 
   <div className='bg-white border-2 border-black hover:border-slate-400 rounded shadow-md ml-4'>
