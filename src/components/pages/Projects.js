@@ -5,12 +5,12 @@ import weatherDashboard from '../../images/Weather_Dashboard.png';
 
 export default function Projects() {
     return (
-    <div className='bg-slate-300 p-4'> 
-      <h1 className='font-bold text-3xl flex justify-center'>Projects</h1>
+    <div className='bg-slate-300 p-4 bg-gradient-to-r from-green-300 to-purple-300'> 
+      <h1 className='font-bold text-3xl flex justify-center font-mono text-slate-700 opacity-90'>Projects</h1>
 
-<div className='grid grid-cols-3 gap-4 mt-4 p-2'>
+<div className='grid grid-cols-3 gap-4 mt-4 p-2 '>
 
-  <div className='bg-white border-2 border-black hover:border-slate-400 rounded shadow-md ml-4'>
+  <div className='bg-slate-100 border-2 border-black hover:scale-105 rounded shadow-md ml-4 max-w-lg'>
     <img className='w-full h-80' src={employeeTracker} alt='Employee Tracker'></img>
     <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">Employee Tracker</div>
@@ -25,7 +25,7 @@ export default function Projects() {
       </div>
   </div>
 
-      <div className='bg-white border-2 border-black hover:border-slate-400 rounded shadow-md ml-4'>
+      <div className='bg-slate-100 border-2 border-black hover:scale-105 rounded shadow-md ml-4 max-w-lg'>
         <img className="w-full h-80" src={jate} alt="Just Another Text Editor"></img>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">Just Another Text Editor</div>
@@ -43,8 +43,8 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className='bg-white border-2 border-black hover:border-slate-400 rounded shadow-md ml-4'>
-        <img className="object-cover h-80 border border-black" src={weatherDashboard} alt="Weather Dashboard"></img>
+      <div className='bg-slate-100 border-2 border-black hover:scale-105 rounded shadow-md ml-4 max-w-lg'>
+        <img className="w-full h-80 border border-black" src={weatherDashboard} alt="Weather Dashboard"></img>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">Weather Dashboard</div>
           <p className="text-gray-700 text-base">

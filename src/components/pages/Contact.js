@@ -45,15 +45,15 @@ export default function Contact() {
   };
 
   return (
-    <div className='flex justify-center bg-slate-300'>
-      <div className='grid grid-rows-3 bg-slate-300'>
+    <div className='flex justify-center bg-gradient-to-r from-green-300 to-purple-300 font-mono text-slate-700 text-opacity-90'>
+      <div className='grid grid-rows-3'>
 
         <h1 className='font-bold text-3xl m-2'>Contact</h1>
         <div className='flex flex-col items-start'>
           <h1 className='m-4 ml-2 text-xl font-bold'>Name: </h1>
         </div>
           <input 
-          className='flex flex-col items-center border-2 border-slate-400 rounded h-10 ml-2 p-2 w-64'
+          className='flex flex-col items-center border-2 border-slate-400 rounded h-10 ml-2 p-2 w-72'
           placeholder='Name'
           type='text'
           value={name}
@@ -69,7 +69,7 @@ export default function Contact() {
           <h1 className='m-4 ml-2 text-xl font-bold'>Email:</h1>
         </div>
          <input
-          className='flex flex-col items-center border-2 border-slate-400 rounded h-10 ml-2 p-2 w-64'
+          className='flex flex-col items-center border-2 border-slate-400 rounded h-10 ml-2 p-2 w-72'
           placeholder='Email'
           type='text'
           value={email}
@@ -102,7 +102,7 @@ export default function Contact() {
 
           <div>
             <button 
-            className='bg-cyan-500 hover:bg-cyan-600 text-white font-bold ml-2 py-2 px-4 rounded-full'
+            className='bg-cyan-600 hover:bg-cyan-700 text-white font-bold ml-2 py-2 px-4 rounded-full'
             onClick={handleFormSubmit}>
               Submit
             </button>
