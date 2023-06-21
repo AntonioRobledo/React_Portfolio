@@ -1,10 +1,10 @@
-import React from 'react';
+/* import React from 'react';
 import {useState} from 'react';
-import Navtabs from './Navigation';
+import Navtabs from './Navigation/Navigation';
 import Footer from './Footer';
-import Home from './pages/Home';
-import Contact from './pages/Contact';
-import Projects from './pages/Projects';
+import Home from './pages/Home/Home';
+import Contact from './pages/Contact/Contact';
+import Projects from './pages/Projects/Projects';
 import Resume from './pages/Resume';
 
 export default function PortfolioContainer() {
@@ -37,3 +37,4 @@ const handlePageChange = (page) => setCurrentPage(page);
       </div>
     );
 };
+ */

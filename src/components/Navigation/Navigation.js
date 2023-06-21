@@ -3,8 +3,7 @@ import React from 'react';
 function NavTabs({ currentPage, handlePageChange }) {
     return (
         <nav className='sticky top-0 bg-gradient-to-r from-green-300 to-purple-300 p-4'>
-            <h1 className='flex justify-start font-bold text-3xl font-mono text-slate-700 opacity-90'>Antonio Robledo-Ysasaga</h1>
-                <ul className='flex justify-end text-xl font-bold m-4 gap-6 font-mono text-slate-700 opacity-90'>
+                <ul className='flex justify-end text-xl font-bold m-4 gap-6 Montserrat text-slate-700 opacity-90'>
                     <li className='hover:scale-105'>
                         <a
                         href='#home'
