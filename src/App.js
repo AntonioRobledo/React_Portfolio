@@ -31,7 +31,6 @@ const handlePageChange = (page) => setCurrentPage(page);
 
     return (
       <div>
-        <Navtabs currentPage={currentPage} handlePageChange={handlePageChange} />
         {renderPage()}
         <Footer />
       </div>

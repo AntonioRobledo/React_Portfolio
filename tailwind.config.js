@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'nude': '#EAE0D5',
-        'tan': '#C6AC8F',
-        'brown': '#5E503F'
+        'main': '#009c9b',
+        'btnColor1': '#02aab0',
+        'btnColor2': '#00cdac'
       },
     },
   },

@@ -1,8 +1,8 @@
-import React from 'react';
+/* import React from 'react';
 
 function NavTabs({ currentPage, handlePageChange }) {
     return (
-        <nav className='sticky top-0 bg-gradient-to-r from-green-300 to-purple-300 p-4'>
+        <nav className='sticky top-0  p-4'> 
                 <ul className='flex justify-end text-xl font-bold m-4 gap-6 Montserrat text-slate-700 opacity-90'>
                     <li className='hover:scale-105'>
                         <a
@@ -47,4 +47,4 @@ function NavTabs({ currentPage, handlePageChange }) {
     );
 }
 
-export default NavTabs;
+export default NavTabs */;

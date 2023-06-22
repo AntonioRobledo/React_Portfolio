@@ -1,7 +1,46 @@
+#hero {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.About {
-    padding-top: 40em;
+.button {
+    position: relative;
+    display:block;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border: 2px #009c9b solid;
+    border-radius: 6px;
+    outline: 0;
+    overflow:hidden;
+    transition:         0.08s ease-in;
+    -o-transition:      0.08s ease-in;
+    -ms-transition:     0.08s ease-in;
+    -moz-transition:    0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+  }
+  
+  .button:before {
+    content: "";
+    position: absolute;
+    background: #009c9b;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 95%;
+    z-index: -1;
+    -webkit-transition: top 0.1s ease-in;
+  }
+  
+  .button:hover:before {
+    top: 0;
+  }
+
+#Projects,
+#About,
+#Contact {
+    font-family: 'Montserrat', sans-serif;
 }
