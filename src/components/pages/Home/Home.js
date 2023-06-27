@@ -1,11 +1,10 @@
 import React, { useRef, useState } from 'react'; 
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faLinkedin, faInstagram, faGithub} from '@fortawesome/free-brands-svg-icons';
 import './Home.css';
 import 'animate.css/animate.min.css';
 import Fade from 'react-reveal/Fade';
 import { Link, animateScroll as scroll } from "react-scroll";
-import employeeTracker from '../../../images/Employee_Tracker.png';
-import jate from '../../../images/JATE.png';
-import weatherDashboard from '../../../images/Weather_Dashboard.png';
 import houseOfHorrors from '../../../images/House_of_Horrors_2.png';
 import Fleet from '../../../images/Fleet.png';
 
@@ -62,9 +61,24 @@ const Home = () => {
       }
     };
 
+    {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} 
+
     return (
         <div id='hero' className='p-2'>
             <div className='h-screen w-screen'>
+
+            <nav className='navTabs absolute flex flex-row top-0 right-0'>
+                <a href='https://www.linkedin.com/in/antonio-robledo-ysasaga-23a37a1b0/' rel='noopener noreferrer' target='_blank' aria-label='linkedin'>
+                    <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+                </a>
+                <a href='https://github.com/AntonioRobledo' rel='noopener noreferrer' target='_blank'>
+                    <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+                </a>
+                <a href='https://www.instagram.com/arysasaga/' rel='noopener noreferrer' target='_blank'>
+                    <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+                </a>
+            </nav>
+
                 <h1 className='animate__animated animate__fadeInDown animate__slow font-bold text-6xl m-4 p-2 pt-80 text-center leading-relaxed text-slate-800 opacity-80'>
                     Hi, I'm <span style={{color: '#009c9b'}}>Antonio.</span>
                 <br></br>
@@ -81,7 +95,7 @@ const Home = () => {
                     </Link>
                 </div>
                 <div className='button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-slate-200 hover:cursor-pointer'>
-                    <Link to='Projects' spy={true} smooth={true} offset={0} duration={1000}>
+                    <Link to='Projects' spy={true} smooth={true} offset={200} duration={1000}>
                     <Fade>
                     Projects
                     </Fade>
@@ -107,13 +121,13 @@ const Home = () => {
 
         {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}
 
-        <div id='Skills' className='p-4 bg-gradient-to-r from-btnColor1 to-btnColor2 pb-32'> 
+        <div id='Skills' className='p-4 bg-gradient-to-r from-btnColor1 to-btnColor2 pb-36'> 
                 <div className='flex flex-col place-items-center pt-10'>
                     <Fade left>
                     <h1 className='font-bold text-5xl text-white opacity-90 tracking-wider'>SKILLS</h1>
                     </Fade>
                     
-                        <div className='flex flex-row place-items-center pt-20'>
+                        <div className='skillsContainer flex flex-row place-items-center pt-20'>
                             <Fade left>
                             <div className='max-w-2xl mr-16 animate__animated animate__fadeInLeft'>
                                 <img src='https://static.vecteezy.com/system/resources/previews/019/153/003/original/3d-minimal-programming-icon-coding-screen-web-development-concept-laptop-with-a-coding-screen-and-a-coding-icon-3d-illustration-png.png'></img>
@@ -186,82 +200,96 @@ const Home = () => {
 
         {/*PROJECT SECTION*/}   {/*PROJECT SECTION*/}   {/*PROJECT SECTION*/}   {/*PROJECT SECTION*/}   {/*PROJECT SECTION*/}   {/*PROJECT SECTION*/}   {/*PROJECT SECTION*/} 
 
-    <div id='Projects' className='container animate__animated animate__fadeInUp animate__slow mt-10 p-4'> 
+    <div id='Projects' className='animate__animated animate__fadeInUp animate__slow p-4'> 
         <Fade left delay={250} duration={1300}>
-        <h1 className='text-5xl flex justify-center text-black opacity-90 mb-12 tracking-wider'>PROJECTS</h1>
-
-    <div className='project-wrapper'>
+        <h1 className='text-4xl flex justify-center text-black opacity-90 mb-12 tracking-wider'>PROJECTS</h1>
+        </Fade>
+    <div className='container'>
+        <div className='project-wrapper'>
         
-        <div className='row flex flex-wrap'>
-            <div className='col-lg-4 col-sm-12'>
-                <Fade left className='project-wrapper-description'>
-                    <h3 className='project-title'>Fleet</h3>
-                    <div>
-                        <div className='tech-stack flex flex-row flex-wrap'>
-                            <div class='tech'>React</div>
-                            <div class='tech'>Node/Express</div>
-                            <div class='tech'>Stripe</div>
-                            <div class='tech'>MongoDB</div>
-                            <div class='tech'>GraphQL</div>
-                            <div class='tech'>Apollo</div>
-                            <div class='tech'>JWT</div>
-                            <div class='tech'>Bcrypt</div>
-                            <div class='tech'>Tailwind</div>
+            <div className='row flex flex-row'>
+                <div className='project-columns col-lg-4 col-sm-12'>
+                    <Fade left delay={250} duration={1300} className='project-wrapper-description'>
+                        <h3 className='project-title'>Fleet</h3>
+                        <div>
+                            <div className='tech-stack flex flex-row flex-wrap'>
+                                <div class='tech'>React</div>
+                                <div class='tech'>Node/Express</div>
+                                <div class='tech'>Stripe</div>
+                                <div class='tech'>MongoDB</div>
+                                <div class='tech'>GraphQL</div>
+                                <div class='tech'>Apollo</div>
+                                <div class='tech'>JWT</div>
+                                <div class='tech'>Bcrypt</div>
+                                <div class='tech'>Tailwind</div>
+                            </div>
+                        <p className='collaborators'>
+                            Collaborators: <span className='font-sans italic font-medium'>Jack Nguyen, Nathaniel Vanderpoort, Maegan Batorek</span>
+                        </p>
+                        <p className='project-description font-sans font-normal'>
+                            An interactive web app designed to bring vehicle delivery service to the customer with ease. Simply select a vehicle and a 
+                            time frame for delivery and the rest is simple: We deliver, You drive.
+                        </p>
                         </div>
-                    <p className='collaborators'>
-                        Collaborators: <span className='font-sans italic font-medium'>Jack Nguyen, Nathaniel Vanderpoort, Maegan Batorek</span>
-                    </p>
-                    <p className='project-description font-sans font-normal'>
-                        An interactive web app designed to bring vehicle delivery service to the customer with ease. Simply select a vehicle and a 
-                        time frame for delivery and the rest is simple: We deliver, You drive.
-                    </p>
-                    </div>
-                <a href='https://fleet-rental.herokuapp.com/' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
-                    Application
-                </a>
-                <a href='https://github.com/jackbngn/rent-a-car' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
-                    GitHub
-                </a>
-                </Fade>
+                    <a href='https://fleet-rental.herokuapp.com/' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
+                        Application
+                    </a>
+                    <a href='https://github.com/jackbngn/rent-a-car' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
+                        GitHub
+                    </a>
+                    </Fade>
+                </div>
+                <div className='col-lg-8 col-sm-12 pt-2 project-image'>
+                    <Fade right delay={250} duration={1300}>
+                        <div className='flex justify-center '>
+                            <img className='fleetImg' src={Fleet} title='Fleet - A Car Rental & Delivery Service!'></img>
+                        </div>
+                    </Fade>
+                </div>
             </div>
-            <div className='col-lg-8 col-sm-12 pt-2'>
-                <Fade left className='project-image'>
-                    <div>
-                        <iframe src='https://fleet-rental.herokuapp.com/' title='Fleet - A Car Rental & Delivery Service!' allowFullScreen='true'></iframe>
-                    </div>
-                </Fade>
+
+            <div className='row flex flex-row'>
+                <div className='project-columns col-lg-4 col-sm-12'>
+                    <Fade left delay={250} duration={1300} className='project-wrapper-description'>
+                        <h3 className='project-title'>House of Horrors</h3>
+                        <div>
+                            <div className='tech-stack flex flex-row flex-wrap'>
+                                <div class='tech'>Node/Express</div>
+                                <div class='tech'>MySQL</div>
+                                <div class='tech'>Sequelize</div>
+                                <div class='tech'>Bcrypt</div>
+                                <div class='tech'>Handlebars</div>
+                                <div class='tech'>Axios</div>
+                                <div class='tech'>Bulma</div>
+                            </div>
+                        <p className='collaborators'>
+                            Collaborators: <span className='font-sans italic font-medium'>Nathaniel Vanderpoort, Changhyun Cho, Daniella Ferrufino, Esfan Behbehani</span>
+                        </p>
+                        <p className='project-description font-sans font-normal'>
+                            An application designed for horror movie enthusiasts where users can search for their
+                            favorite horror films, leave reviews, and add movies to their own personalized watchlists!
+                        </p>
+                        </div>
+                    <a href='https://dry-refuge-68933.herokuapp.com/login' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
+                        Application
+                    </a>
+                    <a href='https://github.com/Bentto90/Project-2-Group-4' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
+                        GitHub
+                    </a>
+                    </Fade>
+                </div>
+                <div className='col-lg-8 col-sm-12 pt-2 project-image'>
+                    <Fade right delay={250} duration={1300}>
+                        <div className='flex justify-center '>
+                            <img className='houseOfHorrorsImg' src={houseOfHorrors} title='House of Horrors - a database for horror films'></img>
+                        </div>
+                    </Fade>
+                </div>
             </div>
-            
+
         </div>
-
-
-
-
-
-        <br></br>
-
-    <div className='bg-slate-100 border-2 border-black hover:scale-105 rounded shadow-md max-w-lg'>
-        <img className="w-full h-80 border border-black" src={houseOfHorrors} alt="Weather Dashboard"></img>
-        <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2">House of Horrors</div>
-          <p className="text-gray-700 text-base">
-            An application designed for horror movie enthusiasts where users can search for their
-            favorite horror films, leave reviews, and add movies to their own personalized watchlists!
-          </p>
-        </div>
-        <div className="flex justify-center gap-6">
-          <a href='https://github.com/Bentto90/Project-2-Group-4' target='_blank'  rel="noreferrer">
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 hover:bg-gray-300 mr-2 mb-4">GitHub</span>
-          </a>
-          <a href='https://dry-refuge-68933.herokuapp.com/login' target='_blank'  rel="noreferrer">
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 hover:bg-gray-300 mr-2 mb-4">Link to App</span>
-          </a>
-        </div>
-      </div>
-
-      </div>
-      </Fade>
-   </div>
+    </div>
+</div>
 
     {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}
 
