@@ -1,50 +1,28 @@
-/* import React from 'react';
+import React from 'react';
+import Fade from 'react-reveal/Fade';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
+import './Navigation.css';
+import '@fortawesome/free-brands-svg-icons';
 
-function NavTabs({ currentPage, handlePageChange }) {
+function NavTabs() {
     return (
-        <nav className='sticky top-0  p-4'> 
-                <ul className='flex justify-end text-xl font-bold m-4 gap-6 Montserrat text-slate-700 opacity-90'>
-                    <li className='hover:scale-105'>
-                        <a
-                        href='#home'
-                        onClick={() => handlePageChange('Home')}
-                        // This is a conditional (ternary) operator that checks to see if the current page is "Hoem"
-                        // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-                        className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-                        >
-                            Home
-                        </a>
-                    </li>
-                    <li className='hover:scale-105'>
-                        <a 
-                        href='#projects'
-                        onClick={() => handlePageChange('Projects')}
-                        className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
-                        >
-                            Projects
-                        </a>
-                    </li>
-                    <li className='hover:scale-105'>
-                        <a
-                        href='#contact'
-                        onClick={() => handlePageChange('Contact')}
-                        className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-                        >
-                            Contact
-                        </a>
-                    </li>
-                    <li className='hover:scale-105'>
-                        <a 
-                        href='#resume'
-                        onClick={() => handlePageChange('Resume')}
-                        className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'} 
-                        >
-                            Resume
-                        </a>
-                    </li>
-                </ul>
+        <nav className='flex flex-row justify-end'>
+            <Fade top duration={2000}>
+                <a href='https://www.linkedin.com/in/antonio-robledo-ysasaga-23a37a1b0/' rel='noopener noreferrer' target='_blank' aria-label='linkedin'>
+                    <FontAwesomeIcon className='hover:scale-105' icon={faLinkedin} size='2x' color='#00cdac'></FontAwesomeIcon>
+                </a>
+                <a href='https://github.com/AntonioRobledo' rel='noopener noreferrer' target='_blank'>
+                    <FontAwesomeIcon className='hover:scale-105' icon={faGithub} size='2x' color='#00cdac'></FontAwesomeIcon>
+                </a>
+                <a href='https://www.instagram.com/arysasaga/' rel='noopener noreferrer' target='_blank'>
+                    <FontAwesomeIcon className='hover:scale-105' icon={faInstagram} size='2x' color='#00cdac'></FontAwesomeIcon>
+                </a>
+            </Fade>
         </nav>
-    );
+    )
 }
 
-export default NavTabs */;
+
+
+export default NavTabs;

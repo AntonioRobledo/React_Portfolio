@@ -1,13 +1,10 @@
 import React, { useRef, useState } from 'react'; 
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faLinkedin, faInstagram, faGithub} from '@fortawesome/free-brands-svg-icons';
 import './Home.css';
 import 'animate.css/animate.min.css';
 import Fade from 'react-reveal/Fade';
 import { Link, animateScroll as scroll } from "react-scroll";
 import houseOfHorrors from '../../../images/House_of_Horrors_2.png';
 import Fleet from '../../../images/Fleet.png';
-
 import emailjs from '@emailjs/browser';
 
 const Home = () => {
@@ -67,48 +64,36 @@ const Home = () => {
         <div id='hero' className='p-2'>
             <div className='h-screen w-screen'>
 
-            <nav className='navTabs absolute flex flex-row top-0 right-0'>
-                <a href='https://www.linkedin.com/in/antonio-robledo-ysasaga-23a37a1b0/' rel='noopener noreferrer' target='_blank' aria-label='linkedin'>
-                    <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
-                </a>
-                <a href='https://github.com/AntonioRobledo' rel='noopener noreferrer' target='_blank'>
-                    <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
-                </a>
-                <a href='https://www.instagram.com/arysasaga/' rel='noopener noreferrer' target='_blank'>
-                    <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
-                </a>
-            </nav>
-
                 <h1 className='animate__animated animate__fadeInDown animate__slow font-bold text-6xl m-4 p-2 pt-80 text-center leading-relaxed text-slate-800 opacity-80'>
-                    Hi, I'm <span style={{color: '#009c9b'}}>Antonio.</span>
+                    Hi, I'm <span style={{color: '#00cdac'}}>Antonio.</span>
                 <br></br>
                     A Full Stack Web Developer.
                 </h1>
 
         <div className='flex justify-center animate__animated animate__fadeInUp animate__slow animate__delay-1s'>
-            <div className='inline-flex text-3xl font-semibold gap-4' style={{color: '#009c9b'}}>
-                <div className='button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-slate-200 hover:cursor-pointer'>
+            <div className='inline-flex text-3xl font-semibold gap-4' style={{color: '#00cdac'}}>
+                <div className='button p-1 border-btnColor2 hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-slate-200 hover:cursor-pointer'>
                     <Link to='Skills' spy={true} smooth={true} offset={-80} duration={1000}>
                     <Fade>
                     Skills
                     </Fade>
                     </Link>
                 </div>
-                <div className='button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-slate-200 hover:cursor-pointer'>
+                <div className='button p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-slate-200 hover:cursor-pointer'>
                     <Link to='Projects' spy={true} smooth={true} offset={200} duration={1000}>
                     <Fade>
                     Projects
                     </Fade>
                     </Link>
                 </div>
-                <div className='button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-slate-200 hover:cursor-pointer'>
+                <div className='button p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-slate-200 hover:cursor-pointer'>
                     <Link to='About' spy={true} smooth={true} offset={0} duration={1000}>
                     <Fade>
                     About
                     </Fade>
                     </Link>
                     </div>
-                <div className='button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-slate-200 hover:cursor-pointer'>
+                <div className='button p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-slate-200 hover:cursor-pointer'>
                     <Link to='Contact' spy={true} smooth={true} offset={-100} duration={1000}>
                     <Fade>
                     Contact

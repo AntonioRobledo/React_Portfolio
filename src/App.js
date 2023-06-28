@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Navtabs from './components/Navigation/Navigation';
+import NavTabs from './components/Navigation/Navigation';
 import Footer from './components/Footer';
 import Home from './components/pages/Home/Home';
 import Contact from './components/pages/Contact/Contact';
@@ -31,6 +31,7 @@ const handlePageChange = (page) => setCurrentPage(page);
 
     return (
       <div>
+        <NavTabs />
         {renderPage()}
         <Footer />
       </div>

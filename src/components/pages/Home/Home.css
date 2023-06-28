@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-.navTabs {
-  
-}
-
 h1,
 #Projects,
 #About,
@@ -68,7 +64,7 @@ h1,
     display:block;
     font-size: 25px;
     letter-spacing: 2px;
-    border: 2px #009c9b solid;
+    border: 2px #00cdac solid;
     border-radius: 6px;
     outline: 0;
     overflow:hidden;
@@ -207,5 +203,9 @@ h3 {
   .row, 
   .skillsContainer {
     flex-direction: column;
+  }
+  .fleetImg,
+  .houseOfHorrorsImg {
+    width: 480px;
   }
 }
