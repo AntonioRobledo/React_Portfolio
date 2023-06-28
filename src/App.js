@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import NavTabs from './components/Navigation/Navigation';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import Home from './components/pages/Home/Home';
 import Contact from './components/pages/Contact/Contact';
 import Projects from './components/pages/Projects/Projects';

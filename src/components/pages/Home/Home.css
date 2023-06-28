@@ -199,6 +199,34 @@ h3 {
   color:#00cdac;
 }
 
+.submitButton {
+  position: relative;
+  margin-left: 0.6rem;
+  display: block;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border: 2px #00cdac solid;
+  border-radius: 4px;
+  outline: 0;
+  overflow:hidden;
+}
+
+.submitButton:before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(#009c9b, #00cdac);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: all 0.1s ease-in;
+}
+
+.submitButton:hover:before {
+  top: 0;
+}
+
 @media (max-width: 1100px) {
   .row, 
   .skillsContainer {

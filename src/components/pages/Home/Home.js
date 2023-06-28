@@ -367,7 +367,7 @@ const Home = () => {
 
           <div>
             <button 
-            className='bg-cyan-600 hover:bg-cyan-700 text-white font-bold ml-2 py-2 px-4 rounded-full'
+            className='submitButton text-btnColor2 hover:text-white font-bold py-2 px-5 rounded'
             onClick={sendEmail}>
               Submit
             </button>
