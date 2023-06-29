@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'; 
+import React, { useRef, useState} from 'react'; 
 import './Home.css';
 import 'animate.css/animate.min.css';
 import Fade from 'react-reveal/Fade';
@@ -6,6 +6,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import houseOfHorrors from '../../../images/House_of_Horrors_2.png';
 import Fleet from '../../../images/Fleet.png';
 import emailjs from '@emailjs/browser';
+import ScrollUpButton from '../../ScrollUpButton/ScrollUp';
 
 const Home = () => {
 
@@ -150,7 +151,7 @@ const Home = () => {
                                                 <img src='https://www.danny-berger.dev/static/d42672d4d185739d26257ed5c653c740/e8676/node.png'></img>
                                             Node</div>
                                             <div className='text-lg mt-2 ml-3'>
-                                                <img className='ml-2' src='https://www.danny-berger.dev/static/f50a47cbc17ab8ca183bbe9010b47ec9/e8676/express.png'></img>
+                                                <img className='ml-2 expressIcon' src='https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png'></img>
                                             Express</div>
                                             <div className='text-md mt-1 ml-1'>
                                                 <img className='ml-3 w-14 h-14' src='https://www.svgrepo.com/show/354333/sequelize.svg'></img>
@@ -284,12 +285,13 @@ const Home = () => {
                 <Fade left delay={250}>
                 <h1 className='text-5xl tracking-wider pt-2'>ABOUT</h1>
                 <div className='pt-10'>
-                    <p className='mt-6'> As a recent graduate of the University of California, Irvine, I have had the opportunity to study in an institution
-                        with peers who share a similar passion. </p>
+                    <p className='mt-6'>In college, I majored in Japanese Language and Literature and although it was quite fascinating, the job prospects did not prove to be fruitful. 
+                        That summer, I began looking at different programming languages as an opportunity to reinvent myself.</p>
                         <br></br>
-                    <p> In the fall of 2022, I challenged myself to take on a Full Stack Web Development coding bootcamp through UCI's Division of Continuing 
-                        Education. Knowing that it would require months of dedication, I was eager to dive back into academia and learn new concepts, while bringing forth new perspectives,
-                        and a positive attitude to every challenge.</p>
+                    <p> In the fall of 2022, I decided I would take on a Full Stack Web Development coding bootcamp.
+                        Knowing the amount of dedication it would require, I was eager to dive back into academia and learn new concepts. Since graduating from the program, my life has been enveloped 
+                        with the desire to create web applications of all sorts! Although I specialize in the MERN stack, I'm open to learning other technology stacks! I am currently furthering
+                        my knowledge in React and Redux.</p>
                         <br></br>
                     <p>
                         When I'm not coding, you'll usually find me hanging around coffee shops in Orange County. Let's Connect!
@@ -305,7 +307,7 @@ const Home = () => {
 
    {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}
 
-   <div id='Contact' className='flex justify-center text-slate-700'>
+   <div id='Contact' className='flex justify-center text-slate-700 pb-10'>
       <div className='flex justify-center'>
         <div className='mt-10 text-center'>
       <Fade left delay={250}>
@@ -377,7 +379,7 @@ const Home = () => {
         </div>
         </div>
       </div>
-
+        <ScrollUpButton />
     </div>
     )
 }

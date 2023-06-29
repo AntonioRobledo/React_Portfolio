@@ -7,7 +7,7 @@ import { faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-
 
 function Footer() {
     return (
-        <footer className='mt-2 bg-gradient-to-r from-btnColor1 to-btnColor2'>
+        <footer className='mt-2 bg-gradient-to-r from-btnColor1 to-btnColor2 pt-2 pb-2'>
             <div className='flex justify-center gap-16 p-6'>
                 <a href='https://www.linkedin.com/in/antonio-robledo-ysasaga-23a37a1b0/' rel='noopener noreferrer' target='_blank' aria-label='linkedin'>
                     <FontAwesomeIcon className='hover:scale-105' icon={faLinkedin} size='2x' color='#fff'></FontAwesomeIcon>
