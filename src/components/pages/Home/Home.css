@@ -236,9 +236,26 @@ h3 {
   .row, 
   .skillsContainer {
     flex-direction: column;
+    margin: 0;
+    padding: 0;
   }
   .fleetImg,
   .houseOfHorrorsImg {
     width: 480px;
+  }
+}
+
+@media (max-width: 450px) {
+  #navSkills {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 390px) {
+  .project-columns {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }

@@ -28,6 +28,7 @@ const Home = () => {
         }, (error) => {
             console.log(error.text);
         });
+        
   
       let err = false; 
   
@@ -65,14 +66,14 @@ const Home = () => {
         <div id='hero' className='p-2'>
             <div className='h-screen w-screen'>
 
-                <h1 className='animate__animated animate__fadeInDown animate__slow font-bold text-6xl m-4 p-2 pt-80 text-center leading-relaxed text-slate-800 opacity-80'>
+                <h1 className='animate__animated animate__fadeInDown animate__slow font-bold text-6xl m-4 p-2 pt-40 text-center leading-relaxed text-slate-800 opacity-80'>
                     Hi, I'm <span style={{color: '#00cdac'}}>Antonio.</span>
                 <br></br>
                     A Full Stack Web Developer.
                 </h1>
 
         <div className='flex justify-center animate__animated animate__fadeInUp animate__slow animate__delay-1s'>
-            <div className='inline-flex text-3xl font-semibold gap-4' style={{color: '#00cdac'}}>
+            <div id='navSkills' className='inline-flex text-3xl font-semibold gap-4' style={{color: '#00cdac'}}>
                 <div className='button p-1 border-btnColor2 hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-slate-200 hover:cursor-pointer'>
                     <Link to='Skills' spy={true} smooth={true} offset={-80} duration={1000}>
                     <Fade>
@@ -107,7 +108,7 @@ const Home = () => {
 
         {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}
 
-        <div id='Skills' className='p-4 bg-gradient-to-r from-btnColor1 to-btnColor2 pb-36'> 
+        <div id='Skills' className='p-4 bg-gradient-to-r from-btnColor1 to-btnColor2 mt-20 pb-36'> 
                 <div className='flex flex-col place-items-center pt-10'>
                     <Fade left>
                     <h1 className='font-bold text-5xl text-white opacity-90 tracking-wider'>SKILLS</h1>
@@ -174,7 +175,7 @@ const Home = () => {
                                                 <img className='ml-2' src='https://www.danny-berger.dev/static/7135045e6ed51c8094f04b6d5a9dbbc9/e8676/heroku.png'></img>
                                             Heroku</div>
                                             <div className='text-lg mt-2'>
-                                                <img className='w-14 h-14 ml-1' src='https://cdn.onlinewebfonts.com/svg/img_326384.png'></img>
+                                                <img className='w-14 h-14 ml-1' src='https://cdn-icons-png.flaticon.com/512/25/25231.png'></img>
                                             GitHub</div>                                            
                                         </div>
                                     </div>
