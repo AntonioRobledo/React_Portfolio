@@ -78,7 +78,7 @@ const Home = () => {
         <div className='flex justify-center animate__animated animate__fadeInUp animate__slow animate__delay-1s'>
             <div id='navSkills' className='inline-flex text-3xl font-semibold gap-4' style={{color: '#00cdac'}}>
                 <div className='button p-1 border-btnColor2 hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-slate-200 hover:cursor-pointer'>
-                    <Link to='Skills' spy={true} smooth={true} offset={-80} duration={1000}>
+                    <Link to='Skills' spy={true} smooth={true} offset={0} duration={1000}>
                     <Fade>
                     Skills
                     </Fade>
