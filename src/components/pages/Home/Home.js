@@ -16,13 +16,14 @@ const Home = () => {
     const [nameError, setNameError] = useState('');
     const [emailError, setEmailError] = useState('');
     const [messageError, setMessageError] = useState('');
+    const [messageSuccess, setMessageSuccess] = useState('');
   
     const form = useRef();
   
     const sendEmail = (e) => {
       e.preventDefault();
     
-      emailjs.sendForm('service_xwfdd0m', 'template_p4epm79', form.current, '89qxhVtXurae15Pxf')
+      emailjs.sendForm('service_xwfdd0m', 'template_p4epm79', 'form', '89qxhVtXurae15Pxf')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -57,16 +58,18 @@ const Home = () => {
         setName(' ');
         setEmail(' ');
         setMessage(' ');
+        setMessageSuccess('Your message has been sent!');
+        setTimeout(() => {setMessageSuccess('')}, 2000);
       }
     };
 
     {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} 
 
     return (
-        <div id='hero' className='p-2'>
+        <div id='hero' className=''>
             <div className='h-screen w-screen'>
 
-                <h1 className='animate__animated animate__fadeInDown animate__slow font-bold text-6xl m-4 p-2 pt-40 text-center leading-relaxed text-slate-800 opacity-80'>
+                <h1 className='animate__animated animate__fadeInDown animate__slow font-bold text-6xl m-4 p-2 pt-48 text-center leading-relaxed text-slate-800 opacity-80'>
                     Hi, I'm <span style={{color: '#00cdac'}}>Antonio.</span>
                 <br></br>
                     A Full Stack Web Developer.
@@ -108,7 +111,7 @@ const Home = () => {
 
         {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}
 
-        <div id='Skills' className='p-4 bg-gradient-to-r from-btnColor1 to-btnColor2 mt-20 pb-36'> 
+        <div id='Skills' className='bg-gradient-to-r from-btnColor1 to-btnColor2 mt-96 pb-36'> 
                 <div className='flex flex-col place-items-center pt-10'>
                     <Fade left>
                     <h1 className='font-bold text-5xl text-white opacity-90 tracking-wider'>SKILLS</h1>
@@ -280,14 +283,13 @@ const Home = () => {
 
     {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}
 
-   <div id='About' className='bg-gradient-to-r from-btnColor1 to-btnColor2'>
+   <div id='About' className='p-2 bg-gradient-to-r from-btnColor1 to-btnColor2'>
         <div className='flex justify-center'>
             <div className='mt-10 max-w-4xl text-center text-xl leading-loose text-slate-200'>
                 <Fade left delay={250}>
                 <h1 className='text-5xl tracking-wider pt-2'>ABOUT</h1>
                 <div className='pt-10'>
-                    <p className='mt-6'>In college, I majored in Japanese Language and Literature and although it was quite fascinating, the job prospects did not prove to be fruitful. 
-                        That summer, I began looking at different programming languages as an opportunity to reinvent myself.</p>
+                    <p className='mt-6'>In the summer following my college graduation, I began looking at different programming languages as an opportunity to reinvent myself.</p>
                         <br></br>
                     <p> In the fall of 2022, I decided I would take on a Full Stack Web Development coding bootcamp.
                         Knowing the amount of dedication it would require, I was eager to dive back into academia and learn new concepts. Since graduating from the program, my life has been enveloped 
@@ -308,7 +310,7 @@ const Home = () => {
 
    {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}
 
-   <div id='Contact' className='flex justify-center text-slate-700 pb-10'>
+   <div id='Contact' className='flex justify-center text-slate-700 pb-10 pl-3'>
       <div className='flex justify-center'>
         <div className='mt-10 text-center'>
       <Fade left delay={250}>
@@ -371,10 +373,16 @@ const Home = () => {
           <div>
             <button 
             className='submitButton text-btnColor2 hover:text-white font-bold py-2 px-5 rounded'
-            onClick={sendEmail}>
+            type='submit' value='Send'>
               Submit
             </button>
+            {messageSuccess && (
+            <div className='text-blue-500 font-bold m-4 pb-4'>
+                <p>{messageSuccess}</p>
+            </div>
+                )}
           </div>
+
         </form>
         </Fade>
         </div>
