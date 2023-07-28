@@ -14,7 +14,7 @@ A portfolio made possible using React and contains a variety of pages that inclu
 
 ## Deployed Application
 ---
-![screenshot](./images/React%20Portfolio.png/)
+![screenshot](./images/Personal_Website.png)
 
 ## Technologies Used
 ---
@@ -23,4 +23,4 @@ A portfolio made possible using React and contains a variety of pages that inclu
 
 ## Link to Deployed Application
 ---
-https://antoniorobledo.github.io/React_Portfolio/
+https://antonio-robledo.dev
