@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.432d0cde.css",
-    "main.js": "/static/js/main.12cc1095.js",
+    "main.css": "/static/css/main.bf23509b.css",
+    "main.js": "/static/js/main.b2752c53.js",
     "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
     "static/media/Fleet.png": "/static/media/Fleet.20bcdef5ccef728768a1.png",
     "static/media/House_of_Horrors_2.png": "/static/media/House_of_Horrors_2.84eecf9504356e5151f4.png",
@@ -11,12 +11,12 @@
     "static/media/JATE.png": "/static/media/JATE.348e9b862ea9fdfdc9d9.png",
     "static/media/LinkedIn_Icon.png": "/static/media/LinkedIn_Icon.bb933d6809d6410387a0.png",
     "index.html": "/index.html",
-    "main.432d0cde.css.map": "/static/css/main.432d0cde.css.map",
-    "main.12cc1095.js.map": "/static/js/main.12cc1095.js.map",
+    "main.bf23509b.css.map": "/static/css/main.bf23509b.css.map",
+    "main.b2752c53.js.map": "/static/js/main.b2752c53.js.map",
     "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.432d0cde.css",
-    "static/js/main.12cc1095.js"
+    "static/css/main.bf23509b.css",
+    "static/js/main.b2752c53.js"
   ]
 }
