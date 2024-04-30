@@ -113,17 +113,15 @@ const Home = () => {
 
         <div id='Skills' className='bg-gradient-to-r from-btnColor1 to-btnColor2 mt-96 pb-36'> 
                 <div className='flex flex-col place-items-center pt-10'>
-                    <Fade left>
+                    <Fade up delay={250}>
                     <h1 className='font-bold text-5xl text-white opacity-90 tracking-wider'>SKILLS</h1>
-                    </Fade>
                     {/* ADD TYPESCRIPT, NEXT.JS, VERCEL */}
                         <div className='skillsContainer flex flex-row place-items-center pt-20'>
-                            <Fade left>
+                            
                             <div className='max-w-2xl mr-16 animate__animated animate__fadeInLeft'>
                                 <img src='https://static.vecteezy.com/system/resources/previews/019/153/003/original/3d-minimal-programming-icon-coding-screen-web-development-concept-laptop-with-a-coding-screen-and-a-coding-icon-3d-illustration-png.png'></img>
                             </div>
-                            </Fade>
-                            <Fade right>
+                            
                                 <div className='flex flex-wrap gap-20 justify-evenly pb-6 animate__animated animate__fadeInRight'>
                                     
                                     <div className='rounded max-h-44'>
@@ -183,9 +181,10 @@ const Home = () => {
                                         </div>
                                     </div>
                                 </div>
-                                </Fade>
                         </div>
+                        </Fade>
                 </div>
+
         </div>
 
         {/*PROJECT SECTION*/}   {/*PROJECT SECTION*/}   {/*PROJECT SECTION*/}   {/*PROJECT SECTION*/}   {/*PROJECT SECTION*/}   {/*PROJECT SECTION*/}   {/*PROJECT SECTION*/} 
@@ -323,7 +322,7 @@ const Home = () => {
    <div id='About' className='p-2 bg-gradient-to-r from-btnColor1 to-btnColor2'>
         <div className='flex justify-center'>
             <div className='mt-10 max-w-4xl text-center text-xl leading-loose text-slate-200'>
-                <Fade left delay={250}>
+                <Fade up delay={250}>
                 <h1 className='text-5xl tracking-wider pt-2'>ABOUT</h1>
                 <div className='pt-10'>
                     <p className='mt-6'>In college, I majored in Japanese Language and Literature and although it was quite fascinating, the job prospects did not prove to be fruitful. 
@@ -349,7 +348,7 @@ const Home = () => {
    <div id='Contact' className='flex justify-center text-slate-700 pb-10 pl-3'>
       <div className='flex justify-center'>
         <div className='mt-10 text-center'>
-      <Fade left delay={250}>
+      <Fade up delay={250}>
       <form ref={form} onSubmit={sendEmail}> 
         <h1 className='font-bold text-5xl m-2 tracking-wider'>CONTACT</h1>
         <div className='flex flex-col items-start'>
