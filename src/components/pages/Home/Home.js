@@ -116,7 +116,7 @@ const Home = () => {
                     <Fade left>
                     <h1 className='font-bold text-5xl text-white opacity-90 tracking-wider'>SKILLS</h1>
                     </Fade>
-                    
+                    {/* ADD TYPESCRIPT, NEXT.JS, VERCEL */}
                         <div className='skillsContainer flex flex-row place-items-center pt-20'>
                             <Fade left>
                             <div className='max-w-2xl mr-16 animate__animated animate__fadeInLeft'>
@@ -153,10 +153,10 @@ const Home = () => {
                                         <div className=' rounded-2xl font-semibold tracking-widest flex items-center gap-4 p-3'>
                                             <div className='text-md ml-2 text-center'>
                                                 <img src='https://www.danny-berger.dev/static/d42672d4d185739d26257ed5c653c740/e8676/node.png'></img>
-                                            Node</div>
+                                            Node.js</div>
                                             <div className='text-lg mt-2 ml-3'>
                                                 <img className='ml-2 expressIcon' src='https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png'></img>
-                                            Express</div>
+                                            Express.js</div>
                                             <div className='text-md mt-1 ml-1'>
                                                 <img className='ml-3 w-14 h-14' src='https://www.svgrepo.com/show/354333/sequelize.svg'></img>
                                             Sequelize</div>
@@ -196,6 +196,43 @@ const Home = () => {
         </Fade>
     <div className='container'>
         <div className='project-wrapper'>
+
+        <div className='row flex flex-row'>
+                <div className='project-columns col-lg-4 col-sm-12'>
+                    <Fade left delay={250} duration={1300} className='project-wrapper-description'>
+                        <h3 className='project-title'>ClinicFlow</h3>
+                        <div>
+                            <div className='tech-stack flex flex-row flex-wrap'>
+                                <div class='tech'>Next.js</div>
+                                <div class='tech'>React</div>
+                                <div class='tech'>Node/Express</div>
+                                <div class='tech'>MySQL</div>
+                                <div class='tech'>MongoDB</div>
+                                <div class='tech'>Auth.js</div>
+                                <div class='tech'>Bcrypt</div>
+                                <div class='tech'>Tailwind</div>
+                            </div>
+
+                        <p className='project-description font-sans font-normal'>
+                            Clinic management software designed for healthcare workers to keep patient information in an organized portal. 
+                        </p>
+                        </div>
+                    <a href='https://fleet-rental.herokuapp.com/' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
+                        Application
+                    </a>
+                    <a href='https://github.com/jackbngn/rent-a-car' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
+                        GitHub
+                    </a>
+                    </Fade>
+                </div>
+                <div className='col-lg-8 col-sm-12 pt-2 project-image'>
+                    <Fade right delay={250} duration={1300}>
+                        <div className='flex justify-center '>
+                            <img className='fleetImg' src={Fleet} title='ClinicFlow - a clinic management system!'></img>
+                        </div>
+                    </Fade>
+                </div>
+            </div>
         
             <div className='row flex flex-row'>
                 <div className='project-columns col-lg-4 col-sm-12'>
@@ -289,16 +326,15 @@ const Home = () => {
                 <Fade left delay={250}>
                 <h1 className='text-5xl tracking-wider pt-2'>ABOUT</h1>
                 <div className='pt-10'>
-                    <p className='mt-6'>In the summer following my college graduation, I began looking at different programming languages as an opportunity to reinvent myself.</p>
+                    <p className='mt-6'>In college, I majored in Japanese Language and Literature and although it was quite fascinating, the job prospects did not prove to be fruitful. 
+                        That summer, I began looking at different programming languages as an opportunity to reinvent myself.</p>
                         <br></br>
                     <p> In the fall of 2022, I decided I would take on a Full Stack Web Development coding bootcamp.
                         Knowing the amount of dedication it would require, I was eager to dive back into academia and learn new concepts. Since graduating from the program, my life has been enveloped 
                         with the desire to create web applications of all sorts! Although I specialize in the MERN stack, I'm open to learning other technology stacks! I am currently furthering
-                        my knowledge in React and Redux.</p>
+                        my knowledge in React and Next.js.</p>
                         <br></br>
-                    <p>
-                        When I'm not coding, you'll usually find me hanging around coffee shops in Orange County. Let's Connect!
-                    </p>
+
                     <div className='flex justify-center pb-8 pt-4'> 
                         <a href='https://docs.google.com/document/d/1ZZ6ijcZ-qQxPnE7NafcoRw-_xb2X_O4FE_9thZewP3Q/export?format=pdf' className='resume-button'>RESUME</a>
                     </div>
