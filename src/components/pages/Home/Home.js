@@ -3,7 +3,8 @@ import './Home.css';
 import 'animate.css/animate.min.css';
 import Fade from 'react-reveal/Fade';
 import { Link, animateScroll as scroll } from "react-scroll";
-import houseOfHorrors from '../../../images/House_of_Horrors_2.png';
+import clinicFlow from '../../../images/ClinicFlow.png';
+import houseOfHorrors from '../../../images/House_Of_Horrors.png';
 import Fleet from '../../../images/Fleet.png';
 import emailjs from '@emailjs/browser';
 import ScrollUpButton from '../../ScrollUpButton/ScrollUp';
@@ -112,8 +113,8 @@ const Home = () => {
         {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}
 
         <div id='Skills' className='bg-gradient-to-r from-btnColor1 to-btnColor2 mt-96 pb-36'> 
-                <div className='flex flex-col place-items-center pt-10'>
-                    <Fade up delay={250}>
+                <div className='flex flex-col place-items-center pt-10 animate__animated animate__fadeInUp animate__slow animate__delay-1s'>
+                    <Fade left>
                     <h1 className='font-bold text-5xl text-white opacity-90 tracking-wider'>SKILLS</h1>
                     {/* ADD TYPESCRIPT, NEXT.JS, VERCEL */}
                         <div className='skillsContainer flex flex-row place-items-center pt-20'>
@@ -219,7 +220,7 @@ const Home = () => {
                     <a href='https://fleet-rental.herokuapp.com/' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
                         Application
                     </a>
-                    <a href='https://github.com/jackbngn/rent-a-car' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
+                    <a href='https://github.com/AntonioRobledo/Clinic_Flow' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
                         GitHub
                     </a>
                     </Fade>
@@ -227,7 +228,7 @@ const Home = () => {
                 <div className='col-lg-8 col-sm-12 pt-2 project-image'>
                     <Fade right delay={250} duration={1300}>
                         <div className='flex justify-center '>
-                            <img className='fleetImg' src={Fleet} title='ClinicFlow - a clinic management system!'></img>
+                            <img className='clinicFlow' src={clinicFlow} title='ClinicFlow - a clinic management system!'></img>
                         </div>
                     </Fade>
                 </div>
@@ -260,7 +261,7 @@ const Home = () => {
                     <a href='https://fleet-rental.herokuapp.com/' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
                         Application
                     </a>
-                    <a href='https://github.com/jackbngn/rent-a-car' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
+                    <a href='https://github.com/AntonioRobledo/Fleet' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
                         GitHub
                     </a>
                     </Fade>
@@ -299,7 +300,7 @@ const Home = () => {
                     <a href='https://dry-refuge-68933.herokuapp.com/login' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
                         Application
                     </a>
-                    <a href='https://github.com/Bentto90/Project-2-Group-4' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
+                    <a href='https://github.com/AntonioRobledo/House_Of_Horrors' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
                         GitHub
                     </a>
                     </Fade>
@@ -307,12 +308,11 @@ const Home = () => {
                 <div className='col-lg-8 col-sm-12 pt-2 project-image'>
                     <Fade right delay={250} duration={1300}>
                         <div className='flex justify-center '>
-                            <img className='houseOfHorrorsImg' src={houseOfHorrors} title='House of Horrors - a database for horror films'></img>
+                            <img className='houseOfHorrorsImg ' src={houseOfHorrors} title='House of Horrors - a database for horror films'></img>
                         </div>
                     </Fade>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
@@ -325,13 +325,15 @@ const Home = () => {
                 <Fade up delay={250}>
                 <h1 className='text-5xl tracking-wider pt-2'>ABOUT</h1>
                 <div className='pt-10 p-6'>
-                    <p className='mt-6'>In college, I majored in Japanese Language and Literature and although it was quite fascinating, the job prospects did not prove to be fruitful. 
-                        That summer, I began looking at different programming languages as an opportunity to reinvent myself.</p>
-                        <br></br>
-                    <p> In the fall of 2022, I decided I would take on a Full Stack Web Development coding bootcamp.
-                        Knowing the amount of dedication it would require, I was eager to dive back into academia and learn new concepts. Since graduating from the program, my life has been enveloped 
-                        with the desire to create web applications of all sorts! Although I specialize in the MERN stack, I'm open to learning other technology stacks! I am currently furthering
-                        my knowledge in React and Next.js.</p>
+                    <p className='mt-6'>Having graduated from UCI's Full Stack Web Development Bootcamp, my desire to create remarkable web applications
+                    has grown increasingly so. Eager to go beyond the scope of the classroom, I began to look at different ways to become more involved
+                    within the industry.
+                    </p>
+                <br></br>
+                    <p> Eventually, I found my way into a community of other like-minded developers who sought to create innovative applications. Coming from a background in
+                        hospitality, I love being able to connect and collaborate with others and bring their ideas to fruition. In a world of technology that's constantly evolving, I stay
+                        on top of how I can integrate the next best tech into my projects. 
+                    </p>
                         <br></br>
 
                     <div className='flex justify-center pb-8 pt-4'> 

@@ -88,6 +88,7 @@ h1,
 
 .project-image {
   width: 100%;
+  height: 100%;
   margin-top: 2rem;
 }
 
@@ -167,7 +168,8 @@ h3 {
 }
 
 .fleetImg,
-.houseOfHorrorsImg {
+.houseOfHorrorsImg,
+.clinicFlow {
   width: 660px;
   height: 390px;
   border: 2px solid rgba(67,85,82,.576471);
@@ -240,8 +242,9 @@ h3 {
     padding: 0;
   }
   .fleetImg,
-  .houseOfHorrorsImg {
-    width: 480px;
+  .houseOfHorrorsImg,
+  .clinicFlow {
+    display: none;
   }
 }
 
