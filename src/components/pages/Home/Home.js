@@ -69,7 +69,7 @@ const Home = () => {
         <div id='hero' className=''>
             <div className='h-screen w-screen'>
 
-                <h1 className='animate__animated animate__fadeInDown animate__slow font-bold text-6xl m-4 p-2 pt-48 text-center leading-relaxed text-slate-800 opacity-80'>
+                <h1 className='animate__animated animate__fadeInDown animate__slow font-bold text-6xl m-4 p-2 pt-32 text-center leading-relaxed text-slate-800 opacity-80'>
                     Hi, I'm <span style={{color: '#00cdac'}}>Antonio.</span>
                 <br></br>
                     A Full Stack Web Developer.
@@ -148,7 +148,7 @@ const Home = () => {
                                         <div className="px-6 py-4">
                                             <div className="font-normal text-white tracking-wider text-3xl flex justify-center">Back End</div>
                                         </div>
-                                        <div className=' rounded-2xl font-semibold tracking-widest flex items-center gap-4 p-3'>
+                                        <div className=' rounded-2xl font-semibold tracking-widest flex items-center gap-4 p-6'>
                                             <div className='text-md ml-2 text-center'>
                                                 <img src='https://www.danny-berger.dev/static/d42672d4d185739d26257ed5c653c740/e8676/node.png'></img>
                                             Node.js</div>
@@ -324,7 +324,7 @@ const Home = () => {
             <div className='mt-10 max-w-4xl text-center text-xl leading-loose text-slate-200'>
                 <Fade up delay={250}>
                 <h1 className='text-5xl tracking-wider pt-2'>ABOUT</h1>
-                <div className='pt-10'>
+                <div className='pt-10 p-6'>
                     <p className='mt-6'>In college, I majored in Japanese Language and Literature and although it was quite fascinating, the job prospects did not prove to be fruitful. 
                         That summer, I began looking at different programming languages as an opportunity to reinvent myself.</p>
                         <br></br>
@@ -392,7 +392,7 @@ const Home = () => {
           <textarea 
             id='message' 
             rows='4' 
-            class='h-48 p-2.5 w-96 mb-6 m-2 border-2 border-slate-400 rounded' 
+            class='h-48 p-2.5 w-96 mb-6 m-2 mr-6 border-2 border-slate-400 rounded' 
             value={message}
             placeholder='Write your thoughts here...'
             name='message'
@@ -407,7 +407,7 @@ const Home = () => {
 
           <div>
             <button 
-            className='submitButton text-btnColor2 hover:text-white font-bold py-2 px-5 rounded'
+            className='submitButton text-btnColor2 hover:text-white font-bold py-2 px-5 mb-6 rounded'
             type='submit' value='Send'>
               Submit
             </button>
