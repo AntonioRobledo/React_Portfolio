@@ -244,7 +244,49 @@ h3 {
   .fleetImg,
   .houseOfHorrorsImg,
   .clinicFlow {
-    display: none;
+    height: 40vh;
+    width: 60vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .row, 
+  .skillsContainer {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .fleetImg,
+  .houseOfHorrorsImg,
+  .clinicFlow {
+    height: 40vh;
+    width: 60vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #navSkills {
+    flex-direction: column;
+    align-items: center;
+  }
+    .fleetImg,
+  .houseOfHorrorsImg,
+  .clinicFlow {
+    height: 40vh;
+    width: 60vw;
+  }
+}
+
+@media (max-width: 600px) {
+  #navSkills {
+    flex-direction: column;
+    align-items: center;
+  }
+    .fleetImg,
+  .houseOfHorrorsImg,
+  .clinicFlow {
+    height: auto;
+    width: auto;
   }
 }
 
@@ -252,6 +294,12 @@ h3 {
   #navSkills {
     flex-direction: column;
     align-items: center;
+  }
+  .fleetImg,
+  .houseOfHorrorsImg,
+  .clinicFlow {
+    height: auto;
+    width: auto;
   }
 }
 
