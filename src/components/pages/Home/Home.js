@@ -8,6 +8,7 @@ import houseOfHorrors from '../../../images/House_Of_Horrors.png';
 import Fleet from '../../../images/Fleet.png';
 import emailjs from '@emailjs/browser';
 import ScrollUpButton from '../../ScrollUpButton/ScrollUp';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const Home = () => {
 
@@ -64,6 +65,14 @@ const Home = () => {
       }
     };
 
+    const [text] = useTypewriter({
+        words: ['a Full-Stack Web Developer.', 'a Web Designer.', "an innovator."],
+        loop: {},
+        delaySpeed: 1200,
+        typeSpeed: 70,
+        deleteSpeed: 60,
+    });
+
     {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} 
 
     return (
@@ -73,7 +82,8 @@ const Home = () => {
                 <h1 className='animate__animated animate__fadeInDown animate__slow font-bold text-6xl m-4 p-2 pt-32 text-center leading-relaxed text-slate-800 opacity-80'>
                     Hi, I'm <span style={{color: '#00cdac'}}>Antonio.</span>
                 <br></br>
-                    A Full Stack Web Developer.
+                     I'm <span>{text}</span>
+                    <Cursor/>
                 </h1>
 
         <div className='flex justify-center animate__animated animate__fadeInUp animate__slow animate__delay-1s'>
