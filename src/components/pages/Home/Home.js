@@ -66,11 +66,11 @@ const Home = () => {
     };
 
     const [text] = useTypewriter({
-        words: ['a Full-Stack Web Developer.', 'a Web Designer.', "an innovator."],
+        words: ['a Full-Stack Web Developer.', 'a Web Designer.', "an Innovator."],
         loop: {},
-        delaySpeed: 1200,
-        typeSpeed: 70,
-        deleteSpeed: 60,
+        delaySpeed: 700,
+        typeSpeed: 50,
+        deleteSpeed: 30,
     });
 
     {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} 
@@ -159,7 +159,7 @@ const Home = () => {
                                         <div className="px-6 py-4">
                                             <div className="font-normal text-white tracking-wider text-3xl flex justify-center">Back End</div>
                                         </div>
-                                        <div className=' rounded-2xl font-semibold tracking-widest flex items-center gap-4 p-6'>
+                                        <div className='rounded-2xl font-semibold tracking-widest flex items-center gap-4 p-6'>
                                             <div className='text-md ml-2 text-center'>
                                                 <img src='https://www.danny-berger.dev/static/d42672d4d185739d26257ed5c653c740/e8676/node.png'></img>
                                             Node.js</div>
@@ -222,7 +222,9 @@ const Home = () => {
                                 <div class='tech'>Bcrypt</div>
                                 <div class='tech'>Tailwind</div>
                             </div>
-
+                        <p className='collaborators'>
+                            Solo Project
+                        </p>
                         <p className='project-description font-sans font-normal'>
                             Clinic management software designed for healthcare workers to keep patient information in an organized portal. 
                         </p>
