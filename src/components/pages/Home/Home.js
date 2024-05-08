@@ -8,8 +8,8 @@ import houseOfHorrors from '../../../images/House_Of_Horrors.png';
 import Fleet from '../../../images/Fleet.png';
 import emailjs from '@emailjs/browser';
 import ScrollUpButton from '../../ScrollUpButton/ScrollUp';
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
-
+/* import { useTypewriter, Cursor } from 'react-simple-typewriter';
+ */
 const Home = () => {
 
     const [name, setName] = useState('');
@@ -65,25 +65,25 @@ const Home = () => {
       }
     };
 
-    const [text] = useTypewriter({
+/*     const [text] = useTypewriter({
         words: ['a Full-Stack Web Developer.', 'a Web Designer.', "an Innovator."],
         loop: {},
-        delaySpeed: 700,
-        typeSpeed: 50,
-        deleteSpeed: 30,
-    });
+        delaySpeed: 400,
+        typeSpeed: 40,
+        deleteSpeed: 40,
+    }); */
 
     {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} 
 
     return (
-        <div id='hero' className=''>
-            <div className='h-screen w-screen'>
+        <div id='hero'>
+            <div className='jumbotron h-screen w-screen pb-52'>
 
-                <h1 className='animate__animated animate__fadeInDown animate__slow font-bold text-6xl m-4 p-2 pt-32 text-center leading-relaxed text-slate-800 opacity-80'>
+                <h1 className='title animate__animated animate__fadeInDown animate__slow font-bold text-5xl m-4 p-2 text-center leading-relaxed text-slate-800 opacity-80'>
                     Hi, I'm <span style={{color: '#00cdac'}}>Antonio.</span>
                 <br></br>
-                     I'm <span>{text}</span>
-                    <Cursor/>
+                     I'm <span>a Full-Stack Web Developer.</span>
+                    {/* <Cursor/> */}
                 </h1>
 
         <div className='flex justify-center animate__animated animate__fadeInUp animate__slow animate__delay-1s'>
@@ -129,7 +129,7 @@ const Home = () => {
                     {/* ADD TYPESCRIPT, NEXT.JS, VERCEL */}
                         <div className='skillsContainer flex flex-row place-items-center pt-20'>
                             
-                            <div className='max-w-2xl mr-16 animate__animated animate__fadeInLeft'>
+                            <div className='skillsImg max-w-2xl mr-16 animate__animated animate__fadeInLeft'>
                                 <img src='https://static.vecteezy.com/system/resources/previews/019/153/003/original/3d-minimal-programming-icon-coding-screen-web-development-concept-laptop-with-a-coding-screen-and-a-coding-icon-3d-illustration-png.png'></img>
                             </div>
                             
@@ -139,7 +139,7 @@ const Home = () => {
                                         <div className="px-6 py-4">
                                             <div className="font-normal text-white tracking-wider text-3xl flex justify-center">Front End</div>
                                         </div>
-                                        <div className='rounded-2xl tracking-widest font-semibold flex items-center gap-4 p-4'>
+                                        <div className='frontEndContainer rounded-2xl tracking-widest font-semibold flex items-center gap-4 p-4'>
                                             <div className='text-md mt-1'>
                                                 <img src='https://www.danny-berger.dev/static/64ba6d76997bc51a792f321deda40db4/66640/html5.png'></img>
                                             HTML5</div>
@@ -210,17 +210,17 @@ const Home = () => {
         <div className='row flex flex-row'>
                 <div className='project-columns col-lg-4 col-sm-12'>
                     <Fade left delay={250} duration={1300} className='project-wrapper-description'>
-                        <h3 className='project-title'>ClinicFlow</h3>
+                        <h3 className='project-title'>Clinic Flow</h3>
                         <div>
                             <div className='tech-stack flex flex-row flex-wrap'>
-                                <div class='tech'>Next.js</div>
-                                <div class='tech'>React</div>
-                                <div class='tech'>Node/Express</div>
-                                <div class='tech'>MySQL</div>
-                                <div class='tech'>MongoDB</div>
-                                <div class='tech'>Auth.js</div>
-                                <div class='tech'>Bcrypt</div>
-                                <div class='tech'>Tailwind</div>
+                                <div className='tech'>Next.js</div>
+                                <div className='tech'>React</div>
+                                <div className='tech'>Node/Express</div>
+                                <div className='tech'>MySQL</div>
+                                <div className='tech'>MongoDB</div>
+                                <div className='tech'>Auth.js</div>
+                                <div className='tech'>Bcrypt</div>
+                                <div className='tech'>Tailwind</div>
                             </div>
                         <p className='collaborators'>
                             Solo Project
@@ -252,15 +252,15 @@ const Home = () => {
                         <h3 className='project-title'>Fleet</h3>
                         <div>
                             <div className='tech-stack flex flex-row flex-wrap'>
-                                <div class='tech'>React</div>
-                                <div class='tech'>Node/Express</div>
-                                <div class='tech'>Stripe</div>
-                                <div class='tech'>MongoDB</div>
-                                <div class='tech'>GraphQL</div>
-                                <div class='tech'>Apollo</div>
-                                <div class='tech'>JWT</div>
-                                <div class='tech'>Bcrypt</div>
-                                <div class='tech'>Tailwind</div>
+                                <div className='tech'>React</div>
+                                <div className='tech'>Node/Express</div>
+                                <div className='tech'>Stripe</div>
+                                <div className='tech'>MongoDB</div>
+                                <div className='tech'>GraphQL</div>
+                                <div className='tech'>Apollo</div>
+                                <div className='tech'>JWT</div>
+                                <div className='tech'>Bcrypt</div>
+                                <div className='tech'>Tailwind</div>
                             </div>
                         <p className='collaborators'>
                             Collaborators: <span className='font-sans italic font-medium'>Jack Nguyen, Nathaniel Vanderpoort, Maegan Batorek</span>
@@ -293,13 +293,13 @@ const Home = () => {
                         <h3 className='project-title'>House of Horrors</h3>
                         <div>
                             <div className='tech-stack flex flex-row flex-wrap'>
-                                <div class='tech'>Node/Express</div>
-                                <div class='tech'>MySQL</div>
-                                <div class='tech'>Sequelize</div>
-                                <div class='tech'>Bcrypt</div>
-                                <div class='tech'>Handlebars</div>
-                                <div class='tech'>Axios</div>
-                                <div class='tech'>Bulma</div>
+                                <div className='tech'>Node/Express</div>
+                                <div className='tech'>MySQL</div>
+                                <div className='tech'>Sequelize</div>
+                                <div className='tech'>Bcrypt</div>
+                                <div className='tech'>Handlebars</div>
+                                <div className='tech'>Axios</div>
+                                <div className='tech'>Bulma</div>
                             </div>
                         <p className='collaborators'>
                             Collaborators: <span className='font-sans italic font-medium'>Nathaniel Vanderpoort, Changhyun Cho, Daniella Ferrufino, Esfan Behbehani</span>
@@ -406,7 +406,7 @@ const Home = () => {
           <textarea 
             id='message' 
             rows='4' 
-            class='h-48 p-2.5 w-96 mb-6 m-2 mr-6 border-2 border-slate-400 rounded' 
+            className='h-48 p-2.5 w-96 mb-6 m-2 mr-6 border-2 border-slate-400 rounded' 
             value={message}
             placeholder='Write your thoughts here...'
             name='message'
