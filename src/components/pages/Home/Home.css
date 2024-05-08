@@ -329,11 +329,6 @@ h3 {
 }
 
 @media (max-width: 600px) {
-  .project-columns {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
   .row, 
   .skillsContainer {
     flex-direction: column;
@@ -353,6 +348,12 @@ h3 {
     flex-direction: column;
     align-items: center;
   }
+  .fleetImg,
+  .houseOfHorrorsImg,
+  .clinicFlow {
+    height: auto;
+    width: 50%;
+  }
   .title {
     font-size: 2em;
   }
@@ -363,5 +364,11 @@ h3 {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+  }
+  .fleetImg,
+  .houseOfHorrorsImg,
+  .clinicFlow {
+    height: auto;
+    width: 50%;
   }
 }
