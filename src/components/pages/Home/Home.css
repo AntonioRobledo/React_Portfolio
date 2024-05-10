@@ -56,7 +56,7 @@ h1,
 }
 
 .project-wrapper-description {
-  text-align: left;
+  text-align: right;
 }
 
 .row {
@@ -156,15 +156,18 @@ h3 {
 
 .collaborators {
   margin-bottom: 0.5rem;
+  text-align: left;
 }
 
 .project-description {
   margin-bottom: 0.5rem;
+  text-align: left;
 }
 
 .project-button {
   position: relative;
-  display: inline-block;
+  float: left;
+  margin-top: 1em;
   line-height: 1;
   padding: 0.8rem;
   font-size: 15px;
@@ -345,8 +348,7 @@ h3 {
 
 @media (max-width: 450px) {
   #navSkills {
-    flex-direction: column;
-    align-items: center;
+    display: none;
   }
   .fleetImg,
   .houseOfHorrorsImg,

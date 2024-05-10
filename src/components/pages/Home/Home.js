@@ -1,4 +1,4 @@
-import React, { useRef, useState} from 'react'; 
+import React, { useRef, useState } from 'react'; 
 import './Home.css';
 import 'animate.css/animate.min.css';
 import Fade from 'react-reveal/Fade';
@@ -8,8 +8,7 @@ import houseOfHorrors from '../../../images/House_Of_Horrors.png';
 import Fleet from '../../../images/Fleet.png';
 import emailjs from '@emailjs/browser';
 import ScrollUpButton from '../../ScrollUpButton/ScrollUp';
-/* import { useTypewriter, Cursor } from 'react-simple-typewriter';
- */
+
 const Home = () => {
 
     const [name, setName] = useState('');
@@ -19,6 +18,7 @@ const Home = () => {
     const [emailError, setEmailError] = useState('');
     const [messageError, setMessageError] = useState('');
     const [messageSuccess, setMessageSuccess] = useState('');
+    const [isOpen, setIsOpen] = useState(false);
   
     const form = useRef();
   
@@ -32,7 +32,6 @@ const Home = () => {
             console.log(error.text);
         });
         
-  
       let err = false; 
   
       // error handling for each input field
@@ -65,14 +64,6 @@ const Home = () => {
       }
     };
 
-/*     const [text] = useTypewriter({
-        words: ['a Full-Stack Web Developer.', 'a Web Designer.', "an Innovator."],
-        loop: {},
-        delaySpeed: 400,
-        typeSpeed: 40,
-        deleteSpeed: 40,
-    }); */
-
     {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} {/*HOME SECTION*/} 
 
     return (
@@ -82,8 +73,7 @@ const Home = () => {
                 <h1 className='title animate__animated animate__fadeInDown animate__slow font-bold text-5xl m-4 p-2 text-center leading-relaxed text-slate-800 opacity-80'>
                     Hi, I'm <span style={{color: '#00cdac'}}>Antonio.</span>
                 <br></br>
-                     I'm <span>a Full-Stack Web Developer.</span>
-                    {/* <Cursor/> */}
+                     I'm a Full-Stack Web Developer.
                 </h1>
 
         <div className='flex justify-center animate__animated animate__fadeInUp animate__slow animate__delay-1s'>
@@ -223,7 +213,7 @@ const Home = () => {
                                 <div className='tech'>Tailwind</div>
                             </div>
                         <p className='collaborators'>
-                            Solo Project
+                            <strong>Solo Project</strong>
                         </p>
                         <p className='project-description font-sans font-normal'>
                             Clinic management software designed for healthcare workers to keep patient information in an organized portal. 
