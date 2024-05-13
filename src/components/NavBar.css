@@ -3,41 +3,48 @@
     box-sizing: 0;
 }
 
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 1rem;
+    gap: 4rem;
+
+}
+
 /* --- Navbar and burger menu --- */
 
 nav {
     width: 100%;
     height: 5em;
-    background-color: rgb(37, 39, 53);
+   /*  background-color: rgb(37, 39, 53); */
     display: flex;
     justify-content: flex-start;
     padding: 1em;
 }
 
-.burger-menu {
-    height: 100%;
-    width: 4em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    cursor: pointer;
+.burger_menu {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 20px;
+	cursor: pointer;
+	z-index: 1001;
 }
 
-.burger-bar {
-    width: 4em;
-    height: 0.5em;
-    background-color: rgb(255, 255, 255);
-    border-radius: 0.5em;
-}
-
-.menu {
-    width: 50%;
-    height: 100vh;
-    background-color: rgb(37, 39, 53);
-    position: absolute;
-    top: 0;
-    z-index: -1;
+.burger_menu div {
+	width: 100%;
+	height: 3px;
+	background-color: #00cdac;
+	transition: all 0.3s ease;
 }
 
 /* --- sliding menu --- */
@@ -52,19 +59,16 @@ nav {
 
 /* --- animations --- */
 
-.burger-bar.clicked:nth-child(1) {
-    transform: rotate(45deg) translate(0.75em, 1.25em);
-    transition: ease-out 0.35s;
+.burger_menu.open div:nth-child(1) {
+	transform: translateY(8px) rotate(45deg);
 }
 
-.burger-bar.clicked:nth-child(2) {
-    transform: scale(0.1);
-    transition: ease-out 0.35s;
+.burger_menu.open div:nth-child(2) {
+	opacity: 0;
 }
 
-.burger-bar.clicked:nth-child(3) {
-    transform: rotate(135deg) translate(-0.5em, 1em);
-    transition: ease-out 0.35s;
+.burger_menu.open div:nth-child(3) {
+	transform: translateY(-8px) rotate(-45deg);
 }
 
 /* --- unclicked --- */
@@ -79,7 +83,7 @@ nav {
 .mobile-menu {
 	background-color: #fff;
 	display: flex;
-	/* flex-direction: column; */
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
@@ -107,7 +111,7 @@ nav {
 	font-size: 28px;
 }
 
-@media screen and (min-width: 1141px) {
+@media screen and (min-width: 451px) {
 	.burger_menu {
 		display: none;
 	}
@@ -118,3 +122,4 @@ nav {
 		display: none;
 	}
 }
+

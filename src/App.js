@@ -1,6 +1,6 @@
 import './App.css';
 import React, {useState} from 'react';
-import {  BrowserRouter as Router } from "react-router-dom";
+import {  BrowserRouter as Router} from "react-router-dom";
 import NavTabs from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 import Home from './components/pages/Home/Home';
@@ -14,10 +14,9 @@ function App() {
     return (
       <div className='App'>
         <Router>
-        <Navbar />
-        <NavTabs />
-        <Home />
-        <Footer />
+          <Navbar />
+          <Home />
+          <Footer />
         </Router>
       </div>
     );

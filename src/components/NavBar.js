@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import './NavBar.css';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
+import Fade from 'react-reveal/Fade';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
+import '@fortawesome/free-brands-svg-icons';
 
 const Navbar = () => {
 
@@ -11,19 +15,6 @@ const Navbar = () => {
     const [menu_class, setMenuClass] = useState("menu hidden")
     const [isMenuClicked, setIsMenuClicked] = useState(false)
 
-    // toggle burger menu 
-    const updateMenu = () => {
-        if (!isMenuClicked) {
-            setBurgerClass("burger-bar clicked")
-            setMenuClass("menu visible")
-        }
-        else {
-            setBurgerClass("burger-bar unclicked")
-            setMenuClass("menu hidden")
-        }
-        setIsMenuClicked(!isMenuClicked)
-    }   
-
 	const toggleMenu = () => {
 		setIsOpen(!isOpen);
 	};
@@ -33,27 +24,28 @@ const Navbar = () => {
 	};
 
     return(
-        <div style={{width: '100%', height: '100vh'}}>
+        <div>
             <nav>
+            <Fade top duration={1000}>
                 <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
                     <ul className="mobile-menu__links cursor-pointer">
                         <li>
-                            <Link to="Skills" spy={true} smooth={true} offset={0} duration={1000} onClick={closeMenu}>
+                            <Link to="Skills" onClick={closeMenu}>
                                 Skills
                             </Link>
                         </li>
                         <li>
-                            <Link to="Projects" spy={true} smooth={true} offset={0} duration={1000} onClick={closeMenu}>
+                            <Link to="Projects" onClick={closeMenu}>
                                 Projects
                             </Link>
                         </li>
                         <li>
-                            <Link to="About" spy={true} smooth={true} offset={0} duration={1000} onClick={closeMenu}>
+                            <Link to="About" onClick={closeMenu}>
                                 About
                             </Link>
                         </li>
                         <li>
-                            <Link to="Contact" spy={true} smooth={true} offset={0} duration={1000} onClick={closeMenu}>
+                            <Link to="Contact" onClick={closeMenu}>
                                 Contact
                             </Link>
                         </li>
@@ -64,10 +56,24 @@ const Navbar = () => {
                     <div className={burger_class} ></div>
                     <div className={burger_class} ></div>
                 </div>
+                </Fade>
+            <div className="socials">
+                <Fade top duration={1000}>
+                <a href='https://www.linkedin.com/in/antonio-robledo-ysasaga-23a37a1b0/' rel='noopener noreferrer' target='_blank' aria-label='linkedin'>
+                    <FontAwesomeIcon className='hover:scale-105' icon={faLinkedin} size='2x' color='#00cdac'></FontAwesomeIcon>
+                </a>
+                <a href='https://github.com/AntonioRobledo' rel='noopener noreferrer' target='_blank'>
+                    <FontAwesomeIcon className='hover:scale-105' icon={faGithub} size='2x' color='#00cdac'></FontAwesomeIcon>
+                </a>
+                <a href='https://www.instagram.com/arysasaga/' rel='noopener noreferrer' target='_blank'>
+                    <FontAwesomeIcon className='hover:scale-105' icon={faInstagram} size='2x' color='#00cdac'></FontAwesomeIcon>
+                </a>
+                </Fade>
+            </div>
+
             </nav>
 
             <div className={menu_class}></div>
-
             
         </div>
     )
