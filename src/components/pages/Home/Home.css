@@ -10,7 +10,7 @@ body {
 .jumbotron {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
   justify-content: center;
 }
 
@@ -36,6 +36,24 @@ h1,
   height: auto;
 }
 
+.techStackContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 5em;
+}
+
+.frontEndContainer,
+.backEndContainer,
+.toolsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
 #Projects {
   display: block;
   margin-top: -15rem;
@@ -53,6 +71,10 @@ h1,
 
 .project-wrapper {
   margin-bottom: 15rem;
+}
+
+.project-description {
+  font-size: 18px;
 }
 
 .project-wrapper-description {
@@ -129,7 +151,7 @@ iframe {
 }
 
 h3 {
-  display: block;
+  display: flex;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -137,6 +159,9 @@ h3 {
 }
 
 .tech-stack {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
   margin-bottom: 1rem;
 }
 
@@ -239,6 +264,19 @@ h3 {
   color:#00cdac;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: start;
+}
+
+.messageBox {
+  width: 100%;
+  height: auto;
+}
+
 .submitButton {
   position: relative;
   margin-left: 0.6rem;
@@ -270,6 +308,7 @@ h3 {
 @media (max-width: 1280px) {
   .row, 
   .skillsContainer {
+    display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
@@ -285,6 +324,7 @@ h3 {
 @media (max-width: 1100px) {
   .row, 
   .skillsContainer {
+    display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
@@ -300,13 +340,15 @@ h3 {
 @media (max-width: 992px) {
   .row, 
   .skillsContainer {
+    display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
   }
   .fleetImg,
   .houseOfHorrorsImg,
-  .clinicFlow {
+  .clinicFlow,
+  .skillsImg {
     height: auto;
     width: 50%;
   }
@@ -315,49 +357,75 @@ h3 {
 @media (max-width: 768px) {
   .row, 
   .skillsContainer {
+    display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
   }
   #navSkills {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
   }
   .fleetImg,
   .houseOfHorrorsImg,
-  .clinicFlow {
+  .clinicFlow,
+  .skillsImg {
     height: auto;
     width: 50%;
   }
 }
 
 @media (max-width: 600px) {
-  .row, 
-  .skillsContainer {
+  .row {
+    display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
   }
+  .skillsContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
   .fleetImg,
   .houseOfHorrorsImg,
-  .clinicFlow {
+  .clinicFlow,
+  .skillsImg {
     height: auto;
     width: 50%;
+  }
+  #navSkills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 @media (max-width: 450px) {
-  #navSkills {
-    display: none;
-  }
   .fleetImg,
   .houseOfHorrorsImg,
-  .clinicFlow {
+  .clinicFlow,
+  .skillsImg {
     height: auto;
     width: 50%;
   }
+  .project-columns {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
   .title {
     font-size: 2em;
+  }
+  #navSkills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -369,8 +437,16 @@ h3 {
   }
   .fleetImg,
   .houseOfHorrorsImg,
-  .clinicFlow {
+  .clinicFlow,
+  .skillsImg {
     height: auto;
     width: 100%;
+  }
+  #navSkills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 }

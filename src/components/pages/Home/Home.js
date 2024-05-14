@@ -68,15 +68,15 @@ const Home = () => {
 
     return (
         <div id='hero'>
-            <div className='jumbotron h-screen w-screen pb-52'>
+            <div className='jumbotron h-screen pb-44'>
 
-                <h1 className='title animate__animated animate__fadeInDown animate__slow font-bold text-5xl m-4 p-2 text-center leading-relaxed text-slate-800 opacity-80'>
+                <h1 className='title animate__animated animate__fadeInDown animate__slower font-bold text-5xl m-4 p-2 text-center leading-relaxed text-slate-800 opacity-80'>
                     Hi, I'm <span style={{color: '#00cdac'}}>Antonio.</span>
                 <br></br>
-                     I'm a Full-Stack Web Developer.
+                     I'm A Full-Stack Web Developer.
                 </h1>
 
-        <div className='flex justify-center animate__animated animate__fadeInUp animate__slow animate__delay-1s'>
+        <div className='animate__animated animate__fadeInUp animate__slower animate__delay-1s'>
             <div id='navSkills' className='inline-flex text-3xl font-semibold gap-4' style={{color: '#00cdac'}}>
                 <div className='button p-1 border-btnColor2 hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-slate-200 hover:cursor-pointer'>
                     <Link to='Skills' spy={true} smooth={true} offset={0} duration={1000}>
@@ -86,7 +86,7 @@ const Home = () => {
                     </Link>
                 </div>
                 <div className='button p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-slate-200 hover:cursor-pointer'>
-                    <Link to='Projects' spy={true} smooth={true} offset={200} duration={1000}>
+                    <Link to='Projects' spy={true} smooth={true} offset={270} duration={1000}>
                     <Fade>
                     Projects
                     </Fade>
@@ -112,24 +112,24 @@ const Home = () => {
 
         {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}
 
-        <div id='Skills' className='bg-gradient-to-r from-btnColor1 to-btnColor2 mt-96 pb-36'> 
-                <div className='flex flex-col place-items-center pt-10 animate__animated animate__fadeInUp animate__slow animate__delay-1s'>
+        <div id='Skills' className='bg-gradient-to-r from-btnColor1 to-btnColor2'> 
+                <div className='flex flex-col place-items-center pt-16 pb-32 animate__animated animate__fadeInUp animate__slow animate__delay-1s'>
                     <Fade left>
                     <h1 className='font-bold text-5xl text-white opacity-90 tracking-wider'>SKILLS</h1>
-                    {/* ADD TYPESCRIPT, NEXT.JS, VERCEL */}
-                        <div className='skillsContainer flex flex-row place-items-center pt-20'>
+                    {/* ADD TYPESCRIPT, NEXT.JS, VERCEL, Tailwind, MongoDB, MYSQL */}
+                        <div className='skillsContainer flex flex-row place-items-center'>
                             
-                            <div className='skillsImg max-w-2xl mr-16 animate__animated animate__fadeInLeft'>
+                            <div className='skillsImg max-w-5xl animate__animated animate__fadeInLeft pt-12'>
                                 <img src='https://static.vecteezy.com/system/resources/previews/019/153/003/original/3d-minimal-programming-icon-coding-screen-web-development-concept-laptop-with-a-coding-screen-and-a-coding-icon-3d-illustration-png.png'></img>
                             </div>
                             
-                                <div className='flex flex-wrap gap-20 justify-evenly pb-6 animate__animated animate__fadeInRight'>
+                                <div className='techStackContainer pb-6 animate__animated animate__fadeInRight'>
                                     
                                     <div className='rounded max-h-44'>
                                         <div className="px-6 py-4">
-                                            <div className="font-normal text-white tracking-wider text-3xl flex justify-center">Front End</div>
+                                            <div className="font-normal text-white tracking-wider text-3xl flex justify-center pt-20">Front End</div>
                                         </div>
-                                        <div className='frontEndContainer rounded-2xl tracking-widest font-semibold flex items-center gap-4 p-4'>
+                                        <div className='frontEndContainer rounded-2xl tracking-widest font-semibold flex items-center gap-6 pb-8'>
                                             <div className='text-md mt-1'>
                                                 <img src='https://www.danny-berger.dev/static/64ba6d76997bc51a792f321deda40db4/66640/html5.png'></img>
                                             HTML5</div>
@@ -147,9 +147,9 @@ const Home = () => {
 
                                     <div className='rounded max-h-44'>
                                         <div className="px-6 py-4">
-                                            <div className="font-normal text-white tracking-wider text-3xl flex justify-center">Back End</div>
+                                            <div className="font-normal text-white tracking-wider text-3xl flex justify-center pt-4">Back End</div>
                                         </div>
-                                        <div className='rounded-2xl font-semibold tracking-widest flex items-center gap-4 p-6'>
+                                        <div className='backEndContainer rounded-2xl font-semibold tracking-widest flex items-center gap-4 pb-8'>
                                             <div className='text-md ml-2 text-center'>
                                                 <img src='https://www.danny-berger.dev/static/d42672d4d185739d26257ed5c653c740/e8676/node.png'></img>
                                             Node.js</div>
@@ -166,10 +166,10 @@ const Home = () => {
                                     </div>
 
                                     <div className='rounded max-h-44'>
-                                        <div className="px-6 py-4">
-                                            <div className="font-normal text-white tracking-wider text-3xl flex justify-center">Tools</div>
+                                        <div>
+                                            <div className="font-normal text-white tracking-wider text-3xl flex justify-center pt-8">Tools</div>
                                         </div>
-                                        <div className=' rounded-2xl flex font-semibold tracking-widest items-center gap-4 p-3'>
+                                        <div className='toolsContainer rounded-2xl flex font-semibold tracking-widest items-center gap-8 pt-3'>
                                             <div className='text-lg text-center mt-2'>
                                                 <img src='https://www.danny-berger.dev/static/728ff5a8e44d74cd0f2359ef0a9ec88a/e8676/git.png'></img>
                                             Git</div>
@@ -192,7 +192,7 @@ const Home = () => {
 
     <div id='Projects' className='animate__animated animate__fadeInUp animate__slow p-4'> 
         <Fade left delay={250} duration={1300}>
-        <h1 className='text-4xl flex justify-center text-black opacity-90 mb-12 tracking-wider'>PROJECTS</h1>
+        <h1 className='font-bold text-5xl flex justify-center text-black opacity-90 mb-12 tracking-wider'>PROJECTS</h1>
         </Fade>
     <div className='container'>
         <div className='project-wrapper'>
@@ -216,7 +216,8 @@ const Home = () => {
                             <strong>Solo Project</strong>
                         </p>
                         <p className='project-description font-sans font-normal'>
-                            Clinic management software designed for healthcare workers to keep patient information in an organized portal. 
+                            Clinic management software designed for healthcare workers to keep patient information 
+                            such as medical records, prescriptions, and doctors appointments in an organized portal. 
                         </p>
                         </div>
                     <a href='https://fleet-rental.herokuapp.com/' target='_blank' rel='noopener noreferrer' className='project-button border-2 p-1 border-main hover:bg-gradient-to-r from-btnColor1 to-btnColor2 hover:text-white'>
@@ -321,7 +322,7 @@ const Home = () => {
 
     {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}  {/*ABOUT SECTION*/}
 
-   <div id='About' className='p-2 bg-gradient-to-r from-btnColor1 to-btnColor2'>
+   <div id='About' className='p-2 bg-gradient-to-r from-btnColor1 to-btnColor2 w-screen'>
         <div className='flex justify-center'>
             <div className='mt-10 max-w-4xl text-center text-xl leading-loose text-slate-200'>
                 <Fade up delay={250}>
@@ -349,17 +350,17 @@ const Home = () => {
 
    {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}
 
-   <div id='Contact' className='flex justify-center text-slate-700 pb-10 pl-3'>
+   <div id='Contact' className='flex justify-center text-slate-700 h-screen w-screen'>
       <div className='flex justify-center'>
         <div className='mt-10 text-center'>
       <Fade up delay={250}>
       <form ref={form} onSubmit={sendEmail}> 
         <h1 className='font-bold text-5xl m-2 tracking-wider'>CONTACT</h1>
-        <div className='flex flex-col items-start'>
+        <div className='flex flex-col items-start pt-12'>
           <h1 className='m-4 ml-2 text-xl font-bold'>Your Name: </h1>
         </div>
           <input 
-          className='flex flex-col items-center border-2 border-slate-400 rounded h-10 ml-2 p-2 w-72'
+          className='flex flex-col items-center border-2 border-slate-400 rounded h-12 ml-2 p-2 w-80'
           placeholder='Name'
           type='text'
           value={name}
@@ -376,7 +377,7 @@ const Home = () => {
           <h1 className='m-4 ml-2 text-xl font-bold'> Your Email:</h1>
         </div>
          <input
-          className='flex flex-col items-center border-2 border-slate-400 rounded h-10 ml-2 p-2 w-72'
+          className='flex flex-col items-center border-2 border-slate-400 rounded h-12 ml-2 p-2 w-80'
           placeholder='Email'
           type='text'
           value={email}
@@ -395,8 +396,8 @@ const Home = () => {
 
           <textarea 
             id='message' 
-            rows='4' 
-            className='h-48 p-2.5 w-96 mb-6 m-2 mr-6 border-2 border-slate-400 rounded' 
+            rows='6' 
+            className='messageBox p-2.5 mb-6 border-2 border-slate-400 rounded' 
             value={message}
             placeholder='Write your thoughts here...'
             name='message'

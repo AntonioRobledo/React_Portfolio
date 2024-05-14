@@ -26,7 +26,7 @@ const Navbar = () => {
     return(
         <div>
             <nav>
-            <Fade top duration={1000}>
+            <Fade top duration={2000}>
                 <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
                     <ul className="mobile-menu__links cursor-pointer">
                         <li>
@@ -35,7 +35,7 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="Projects" onClick={closeMenu}>
+                            <Link to="Projects" offset={270} onClick={closeMenu}>
                                 Projects
                             </Link>
                         </li>
@@ -58,7 +58,7 @@ const Navbar = () => {
                 </div>
                 </Fade>
             <div className="socials">
-                <Fade top duration={1000}>
+                <Fade top duration={2000}>
                 <a href='https://www.linkedin.com/in/antonio-robledo-ysasaga-23a37a1b0/' rel='noopener noreferrer' target='_blank' aria-label='linkedin'>
                     <FontAwesomeIcon className='hover:scale-105' icon={faLinkedin} size='2x' color='#00cdac'></FontAwesomeIcon>
                 </a>
