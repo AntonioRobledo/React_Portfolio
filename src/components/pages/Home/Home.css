@@ -20,6 +20,7 @@ body {
 }
 
 h1,
+h2,
 #Projects,
 #About,
 #Contact {
@@ -32,26 +33,49 @@ h1,
 }
 
 .skillsImg {
-  width: 50%;
+  width: 30%;
   height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .techStackContainer {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   row-gap: 5em;
 }
 
-.frontEndContainer,
-.backEndContainer,
-.toolsContainer {
+.frontEndContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-content: center;
   flex-direction: row;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+}
+
+.techStack {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #272341;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 3px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: rgba(67,85,82,.576471);
+  filter: drop-shadow(4px 4px 1px rgba(67,85,82,.576471));
 }
 
 #Projects {
@@ -109,6 +133,15 @@ h1,
   text-align: left;
 }
 
+.tech {
+  border: 1px solid #272341;
+  padding: 4px;
+  margin: 2px;
+  font-size: 0.95rem;
+  color: #fff;
+  background-color: rgba(67,85,82,.576471);
+}
+
 .button {
     position: relative;
     display: block;
@@ -156,22 +189,6 @@ h3 {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-}
-
-.tech-stack {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  margin-bottom: 1rem;
-}
-
-.tech {
-  border: 1px solid #272341;
-  padding: 4px;
-  margin: 2px;
-  font-size: 0.85rem;
-  color: #fff;
-  background-color: rgba(67,85,82,.576471);
 }
 
 .expressIcon {
@@ -342,8 +359,6 @@ form {
   .skillsContainer {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
   }
   .fleetImg,
   .houseOfHorrorsImg,
@@ -352,6 +367,13 @@ form {
     height: auto;
     width: 50%;
   }
+  .frontEndContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -359,8 +381,6 @@ form {
   .skillsContainer {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
   }
   #navSkills {
     display: flex;
@@ -441,6 +461,15 @@ form {
   .skillsImg {
     height: auto;
     width: 100%;
+  }
+  .techStack {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: 46%;
+    height: auto;
   }
   #navSkills {
     display: flex;

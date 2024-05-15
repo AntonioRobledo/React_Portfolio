@@ -73,7 +73,7 @@ const Home = () => {
                 <h1 className='title animate__animated animate__fadeInDown animate__slower font-bold text-5xl m-4 p-2 text-center leading-relaxed text-slate-800 opacity-80'>
                     Hi, I'm <span style={{color: '#00cdac'}}>Antonio.</span>
                 <br></br>
-                     I'm A Full-Stack Web Developer.
+                     I'm a full-stack web developer.
                 </h1>
 
         <div className='animate__animated animate__fadeInUp animate__slower animate__delay-1s'>
@@ -113,7 +113,7 @@ const Home = () => {
         {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}
 
         <div id='Skills' className='bg-gradient-to-r from-btnColor1 to-btnColor2'> 
-                <div className='flex flex-col place-items-center pt-16 pb-32 animate__animated animate__fadeInUp animate__slow animate__delay-1s'>
+                <div className='flex flex-col place-items-center pt-16 animate__animated animate__fadeInUp animate__slow animate__delay-1s'>
                     <Fade left>
                     <h1 className='font-bold text-5xl text-white opacity-90 tracking-wider'>SKILLS</h1>
                     {/* ADD TYPESCRIPT, NEXT.JS, VERCEL, Tailwind, MongoDB, MYSQL */}
@@ -125,60 +125,23 @@ const Home = () => {
                             
                                 <div className='techStackContainer pb-6 animate__animated animate__fadeInRight'>
                                     
-                                    <div className='rounded max-h-44'>
+                                    <div className='rounded'>
                                         <div className="px-6 py-4">
-                                            <div className="font-normal text-white tracking-wider text-3xl flex justify-center pt-20">Front End</div>
+                                            <h2 className="font-bold text-white tracking-wider text-5xl flex justify-center">Tech Stack</h2>
                                         </div>
-                                        <div className='frontEndContainer rounded-2xl tracking-widest font-semibold flex items-center gap-6 pb-8'>
-                                            <div className='text-md mt-1'>
-                                                <img src='https://www.danny-berger.dev/static/64ba6d76997bc51a792f321deda40db4/66640/html5.png'></img>
-                                            HTML5</div>
-                                            <div className='text-md mt-1 text-center'>
-                                                <img src='https://www.danny-berger.dev/static/707e1342a3c3d3aa0a246bde9595efe6/66640/css.png'></img>
-                                            CSS3</div>
-                                            <div className='text-md mb-1'>
-                                                <img className='ml-4' src='https://www.danny-berger.dev/static/efef7da8b48ca5e24cfe4474fc49b611/e8676/javascript.png'></img>
-                                            JavaScript</div>
-                                            <div className='text-md mt-2'>
-                                                <img className='pb-1 ml-1' src='https://www.danny-berger.dev/static/f8ede54c83be00f00cf2796893115223/0efb1/react.png'></img>
-                                            React</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='rounded max-h-44'>
-                                        <div className="px-6 py-4">
-                                            <div className="font-normal text-white tracking-wider text-3xl flex justify-center pt-4">Back End</div>
-                                        </div>
-                                        <div className='backEndContainer rounded-2xl font-semibold tracking-widest flex items-center gap-4 pb-8'>
-                                            <div className='text-md ml-2 text-center'>
-                                                <img src='https://www.danny-berger.dev/static/d42672d4d185739d26257ed5c653c740/e8676/node.png'></img>
-                                            Node.js</div>
-                                            <div className='text-lg mt-2 ml-3'>
-                                                <img className='ml-2 expressIcon' src='https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png'></img>
-                                            Express.js</div>
-                                            <div className='text-md mt-1 ml-1'>
-                                                <img className='ml-3 w-14 h-14' src='https://www.svgrepo.com/show/354333/sequelize.svg'></img>
-                                            Sequelize</div>
-                                            <div className='text-md'>
-                                                <img className='mb-2 ml-4 pt-1' src='https://www.danny-berger.dev/static/3608866a9f2cea329729acfde8a10310/e8676/restfulapi.png'></img>
-                                            RESTful API</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='rounded max-h-44'>
-                                        <div>
-                                            <div className="font-normal text-white tracking-wider text-3xl flex justify-center pt-8">Tools</div>
-                                        </div>
-                                        <div className='toolsContainer rounded-2xl flex font-semibold tracking-widest items-center gap-8 pt-3'>
-                                            <div className='text-lg text-center mt-2'>
-                                                <img src='https://www.danny-berger.dev/static/728ff5a8e44d74cd0f2359ef0a9ec88a/e8676/git.png'></img>
-                                            Git</div>
-                                            <div className='text-lg mt-2'>
-                                                <img className='ml-2' src='https://www.danny-berger.dev/static/7135045e6ed51c8094f04b6d5a9dbbc9/e8676/heroku.png'></img>
-                                            Heroku</div>
-                                            <div className='text-lg mt-2'>
-                                                <img className='w-14 h-14 ml-1' src='https://cdn-icons-png.flaticon.com/512/25/25231.png'></img>
-                                            GitHub</div>                                            
+                                        <div className='frontEndContainer tracking-wider font-medium gap-1 '>
+                                            <div className='techStack'>HTML</div>
+                                            <div className='techStack'>CSS</div>
+                                            <div className='techStack'>JavaScript</div>
+                                            <div className='techStack'>TypeScript</div>
+                                            <div className='techStack'>React</div>
+                                            <div className='techStack'>Next.js</div>
+                                            <div className='techStack'>Node.js</div>
+                                            <div className='techStack'>Express.js</div>
+                                            <div className='techStack'>Tailwind</div>
+                                            <div className='techStack'>MySQL</div>
+                                            <div className='techStack'>MongoDB</div>
+                                            <div className='techStack'>Sequelize</div>
                                         </div>
                                     </div>
                                 </div>
@@ -350,7 +313,7 @@ const Home = () => {
 
    {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}  {/*CONTACT SECTION*/}
 
-   <div id='Contact' className='flex justify-center text-slate-700 h-screen w-screen'>
+   <div id='Contact' className='flex justify-center text-slate-700 w-screen'>
       <div className='flex justify-center'>
         <div className='mt-10 text-center'>
       <Fade up delay={250}>
