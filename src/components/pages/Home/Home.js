@@ -113,22 +113,24 @@ const Home = () => {
         {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}    {/*SKILLS SECTION*/}
 
         <div id='Skills' className='bg-gradient-to-r from-btnColor1 to-btnColor2'> 
-                <div className='flex flex-col place-items-center pt-16 animate__animated animate__fadeInUp animate__slow animate__delay-1s'>
-                    <Fade left>
+                <div className='flex flex-col place-items-center pt-16'>
+                    <Fade up>
                     <h1 className='font-bold text-5xl text-white opacity-90 tracking-wider'>SKILLS</h1>
-                    {/* ADD TYPESCRIPT, NEXT.JS, VERCEL, Tailwind, MongoDB, MYSQL */}
+                    </Fade>
                         <div className='skillsContainer flex flex-row place-items-center'>
-                            
-                            <div className='skillsImg max-w-5xl animate__animated animate__fadeInLeft pt-12'>
+                            <Fade left>
+                            <div className='skillsImg max-w-5xl pt-12'>
                                 <img src='https://static.vecteezy.com/system/resources/previews/019/153/003/original/3d-minimal-programming-icon-coding-screen-web-development-concept-laptop-with-a-coding-screen-and-a-coding-icon-3d-illustration-png.png'></img>
                             </div>
-                            
-                                <div className='techStackContainer pb-6 animate__animated animate__fadeInRight'>
-                                    
+                            </Fade>
+                                <div className='techStackContainer pb-6'>
                                     <div className='rounded'>
+                                    <Fade up>
                                         <div className="px-6 py-4">
                                             <h2 className="font-bold text-white tracking-wider text-5xl flex justify-center">Tech Stack</h2>
                                         </div>
+                                    </Fade>
+                                    <Fade right>
                                         <div className='frontEndContainer tracking-wider font-medium gap-1 '>
                                             <div className='techStack'>HTML</div>
                                             <div className='techStack'>CSS</div>
@@ -143,10 +145,10 @@ const Home = () => {
                                             <div className='techStack'>MongoDB</div>
                                             <div className='techStack'>Sequelize</div>
                                         </div>
+                                    </Fade>
                                     </div>
                                 </div>
                         </div>
-                        </Fade>
                 </div>
 
         </div>
